@@ -1,0 +1,98 @@
+/*
+$JA#COPYRIGHT$
+*/
+
+// ---------------------------------------------------------
+// SMART SEARCH
+// ---------------------------------------------------------
+#t3-off-canvas {
+  right: auto!important;
+}
+.off-canvas body > .autocompleter-choices {
+  width: 0px;
+  left: auto;
+}
+
+.article-intro,
+.article-content {
+
+  // Add proper margin
+  img[align=left],
+  .img_caption.left,
+  .pull-left.item-image {
+    margin: 0 @t3-global-margin*1.5 @t3-global-margin 0;
+  }  
+
+  img[align=right],
+  .img_caption.right,
+  .pull-right.item-image {
+    margin: 0 0 @t3-global-margin @t3-global-margin*1.5 ;
+  }
+}
+
+.blog-featured .item-image img {
+  @media (min-width: @screen-lg-min) {
+    .translate(25%,0);
+  }
+}
+
+// ACM Slideshow
+.acm-slideshow {
+  direction: ltr;
+  overflow: hidden;
+}
+
+div.acm-slideshow .owl-carousel .owl-buttons div.owl-prev {
+  left: 30px;
+  right: auto;
+}
+
+div.acm-slideshow .owl-carousel .owl-buttons div.owl-next {
+  left: auto;
+  right: 30px;
+}
+
+// T3 Tabs style
+.t3-tabs .tab-content {
+  overflow: hidden;
+}
+
+.t3-tabs .owl-nav > div {
+  left: 24px;
+  right: auto;
+}
+
+.t3-tabs .owl-nav > div.owl-next {
+  left: auto;
+  right: 24px;
+}
+
+// Module VM product
+.productdetails.owl-carousel {
+  direction: ltr;
+}
+
+div.ja-tabswrap.default .owl-nav > div {
+  right: auto;
+  left: @t3-global-margin;
+}
+
+div.ja-tabswrap.default .owl-nav > div.owl-next {
+  right: @t3-global-margin;
+  left: auto;
+}
+
+.vmproduct a.product-details {
+  display: inline-block;
+}
+
+// Fixed for Chosen
+.chzn-container {
+  .chzn-drop {
+    display: none;
+  }
+
+  .chzn-single-with-drop + .chzn-drop {
+    display: block;
+  }
+}

@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension 
+	type="module" 
+	version="2.5" 
+	client="site"
+	method="upgrade">
+	
+	<name>JA VM Products</name>
+	<author>JoomlArt.com</author>
+	<creationDate>01 July 2015</creationDate>
+	<copyright>Copyright (C), J.O.O.M Solutions Co., Ltd. All Rights Reserved.</copyright>
+	<license>license GNU/GPLv3 http://www.gnu.org/licenses/gpl-3.0.html</license>
+	<authorEmail>webmaster@joomlart.com</authorEmail>
+	<authorUrl>www.joomlart.com</authorUrl>
+	<version>1.0.4</version>
+	<updateservers>
+	    <server type="collection">http://update.joomlart.com/service/tracking/list.xml</server>
+	</updateservers>
+	<description>
+	<![CDATA[
+		<h1>JA VMProducts module for Joomla! 2.5</h1>
+		<div style='font-weight: normal'>
+			<p>
+			 <span style='color: #ff6600;'>
+			 	<strong>Features:</strong>
+			 </span>
+			 <ul>
+				<li>
+			 	The module allows you to pick one or more products from categories and displays them nicely as a slider.
+			 	</li>
+			 	<li>
+			 	There are 4 types of produts list: Featured Products, Latest Products, Random Products, and Best Sales.
+			 	</li>
+			 </ul>	
+			 </p>
+			<strong>
+				<span style='color: #ff0000;'>Usage Instructions:</span>
+			</strong>
+			<br />
+			<ul>
+				<li>
+					<strong>
+					The VMproducts module only works on template supporting Virtuemart.
+					</strong>
+				</li>
+			</ul>
+			<p><strong><span style='color: #ff0000;'>Upgrade Method:</span><br /></strong></p>
+			<ol>
+				<li>You can install new version directly over this version. Uninstallation is not required. </li>
+				<li>Backup any customized files before upgrading.</li>
+			</ol>
+			<p><span style='color: #008000;'><strong>Links:</strong></span></p>
+			 <ul>
+			 	<li>
+			 		<a target='_blank' href='http://update.joomlart.com/'>Updates &amp; Versions</a>
+			 	</li>
+			 </ul>			
+			<p>Copyright 2004 - 2015 <a href='http://www.joomlart.com/' title='Visit Joomlart.com!'>JoomlArt.com</a>.</p>
+		</div>
+	]]>
+	</description>
+	<languages>
+			<language tag="en-GB">en-GB.mod_javmproducts.ini</language>
+	</languages>
+	
+	<files>
+		<filename module="mod_javmproducts">mod_javmproducts.php</filename>
+		<filename module="mod_javmproducts">index.html</filename>
+		<folder>helpers</folder>	
+		<folder>assets</folder>
+		<folder>tmpl</folder>
+	</files>
+	
+	<config>
+		<fields 
+			name="params" 
+			addfieldpath="modules/mod_javmproducts/assets/elements">
+			<fieldset name="basic">
+				<field type="spacer" hr="false" label="PRODUCTS_SETTINGS" />
+				<field 
+					name="vm_catids" 
+					type="vmcategories"
+					publish="1"
+					value_field="category_name" 
+					label="MOD_JAVM_PRODUCT_CATEGORY_ID"
+					description="MOD_JAVM_PRODUCT_CATEGORY_ID_DESC" />
+				<field 
+					name="max_items" 
+					type="text" 
+					default="10"
+					size="5"
+					label="MOD_JAVM_PRODUCT_MAX_ITEMS" 
+					description="MOD_JAVM_PRODUCT_DISPLAYS_MAX_DESC" />	
+				<field 
+					name="product_group" 
+					type="list" 
+					default="featured"
+					label="MOD_JAVM_PRODUCT_DISPLAY"
+					description="MOD_JAVM_PRODUCT_DISPLAY_DESC">
+				    <option value="featured">MOD_JAVM_PRODUCT_FEATURED_PRODUCTS</option>
+				    <option value="latest">MOD_JAVM_PRODUCT_LATEST_PRODUCTS</option>
+				    <option value="random">MOD_JAVM_PRODUCT_RANDOM_PRODUCTS</option>
+				    <option value="topten">MOD_JAVM_PRODUCT_BEST_SALES</option>
+				</field>
+				
+				<field 
+					name="display_items" 
+					type="text" 
+					default="3"
+					size="5"
+					label="MOD_JAVM_PRODUCT_DISPLAYS_ITEMS" 
+					description="MOD_JAVM_PRODUCT_DISPLAYS_ITEMS_DESC" />
+				<field 
+					name="display_items_mobile" 
+					type="text" 
+					default="1"
+					size="5"
+					label="MOD_JAVM_PRODUCT_DISPLAYS_ITEMS_MOBILE" 
+					description="MOD_JAVM_PRODUCT_DISPLAYS_ITEMS_MOBILE_DESC" />
+				<field 
+					name="display_items_tablet" 
+					type="text" 
+					default="2"
+					size="5"
+					label="MOD_JAVM_PRODUCT_DISPLAYS_ITEMS_TABLET" 
+					description="MOD_JAVM_PRODUCT_DISPLAYS_ITEMS_TABLET_DESC" />
+				<field type="spacer" hr="false" label="LAYOUT_SETTINGS" />
+				
+				<field 
+					name="show_price" 
+					type="radio" 
+					default="1"
+					class="btn-group"
+					label="MOD_JAVM_PRODUCT_SHOW_PRICE"
+					description="MOD_JAVM_PRODUCT_SHOW_PRICE_DESC">
+				    <option value="1">JYES</option>
+				    <option value="0">JNO</option>
+				</field>
+				<field 
+					name="show_addtocart" 
+					type="radio" 
+					default="1"
+					class="btn-group"
+					label="MOD_JAVM_PRODUCT_SHOW_ADDTOCART"
+					description="MOD_JAVM_PRODUCT_SHOW_ADDTOCART_DESC">
+		            <option value="1">JYES</option>
+				    <option value="0">JNO</option>
+				</field>
+				<field 
+					name="show_rating" 
+					type="radio" 
+					default="1"
+					class="btn-group"
+					label="MOD_JAVM_PRODUCT_SHOW_RATING"
+					description="MOD_JAVM_PRODUCT_SHOW_RATING_DESC">
+		            <option value="1">JYES</option>
+				    <option value="0">JNO</option>
+				</field>
+				
+				<field 
+					name="autoplay" 
+					type="radio"
+					class="btn-group" 
+					default="0"
+					label="MOD_JAVM_PRODUCT_ENABLE_AUTOPLAY" 
+					description="MOD_JAVM_PRODUCT_ENABLE_AUTOPLAY_DESC">
+						<option value="1">JYES</option>
+				    	<option value="0">JNO</option>
+				</field>			
+				<field 
+					name="circular" 
+					type="radio"
+					class="btn-group" 
+					default="0"
+					label="MOD_JAVM_PRODUCT_ENABLE_CIRCULAR" 
+					description="MOD_JAVM_PRODUCT_ENABLE_CIRCULAR_DESC">
+						<option value="1">JYES</option>
+				   	 	<option value="0">JNO</option>
+				</field>	
+				<field 
+					name="navigation" 
+					type="radio"
+					class="btn-group" 
+					default="0"
+					label="MOD_JAVM_PRODUCT_SHOW_NAVIGATION" 
+					description="MOD_JAVM_PRODUCT_SHOW_NAVIGATION_DESC">
+						<option value="1">JYES</option>
+				    	<option value="0">JNO</option>
+				</field>
+				<field type="japanel" path="modules/mod_javmproducts/assets/elements/" />		
+			</fieldset>
+			 <fieldset name="advanced">
+			 	<field name="moduleclass_sfx" type="text" default=""
+					label="MODULE_CLASS_SUFFIX"
+						description="MODULE_CLASS_SUFFIX_DESC" />
+				<field name="cache" type="list"
+							default="1"
+							label="COM_MODULES_FIELD_CACHING_LABEL"
+							description="COM_MODULES_FIELD_CACHING_DESC"
+						>
+		            <option value="0">JNO</option>
+		            <option value="1">JYES</option>
+				</field>
+			  </fieldset>
+		</fields>	
+	</config>
+</extension>

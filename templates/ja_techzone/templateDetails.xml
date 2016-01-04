@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install PUBLIC "-//Joomla! 1.6//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/1.6/template-install.dtd">
+<extension version="2.5" type="template" method="upgrade" client="site">
+	<name>Ja_Techzone</name>
+	<version>1.0.0</version>
+	<creationDate>1 July 2015</creationDate>
+	<author>JoomlArt.com</author>
+	<authorEmail>webmaster@joomlart.com</authorEmail>
+	<authorUrl>http://www.t3-framework.org</authorUrl>
+	<copyright>Copyright (C), J.O.O.M Solutions Co., Ltd. All Rights Reserved.</copyright>
+	<license>license GNU/GPLv3 http://www.gnu.org/licenses/gpl-3.0.html</license>
+	<t3>
+		<base>base-bs3</base>
+	</t3>
+	<description>
+		<![CDATA[
+		<div align="center">
+			<div class="alert alert-success" style="background-color:#DFF0D8;border-color:#D6E9C6;color: #468847;padding: 1px 0;">
+				<h3><a href="http://www.joomlart.com/joomla/templates/ja-techzone">Responsive Joomla template for Tech store - JA Techzone</a></h3>
+				<h4><a href="http://ja-techzone.demo.joomlart.com/" title="">Demo</a> | <a href="http://www.joomlart.com/documentation/joomla-templates/ja-techzone" title="">Document</a> | <a href="http://pm.joomlart.com/browse/JATECHZONE" title="">Changelog</a></h4>
+				<p>JA Techzone is a responsive Joomla template for online showroom and hi-tech gadgets ecommerce site. Techzone is perfect fit for modern shopping needs, great for showing and reviewing technology products in an attractive yet simple webstore. The template supports Joomla shopping component - VirtueMart with various options for improving the user experience and effectively managing your online shop. Joomla forum component - Kunena provides the ultimate option for your shoppers'community with self-help forums, discussion boards, and online activities. Techzone also features Joomla blogging component - K2 for blogging and reviewing about hi-tech products. Techzone takes inspiration from Material design - the trendy design theory from Google. The Joomla template offers a smooth shopping experience across platforms and screens. With T3 Framework and Bootstrap 3 at core, Techzone is easy to customize and install. You can freely modify the responsive ecommerce template with MagicTheme, and Layout Configuration.</p>
+				<p>JA Techzone supports RTL language layouts.</p>
+				<span style="color:#FF0000">Note: T3 blank requires T3 plugin to be installed and enabled.</span><p></p>
+				<p>Copyright 2004 - 2015 <a href='http://www.joomlart.com/' title='Visit Joomlart.com!'>JoomlArt.com</a>.</p>
+			</div>
+			<style>table.adminform{width: 100%;}</style>
+		</div>
+		]]>
+	</description>
+	<files>
+		<filename>component.php</filename>
+		<filename>favicon.ico</filename>
+		<filename>index.html</filename>
+		<filename>index.php</filename>
+		<filename>thememagic.xml</filename>
+		<filename>templateInfo.php</filename>
+		<filename>templateHook.php</filename>
+		<filename>template_preview.png</filename>
+		<filename>template_thumbnail.png</filename>
+		<filename>templateDetails.xml</filename>
+		<filename>error.php</filename>
+		<filename>offline.php</filename>
+		<folder>acm</folder>
+		<folder>etc</folder>
+		<folder>fonts</folder>
+		<folder>html</folder>
+		<folder>css</folder>
+		<folder>js</folder>
+		<folder>less</folder>
+		<folder>language</folder>
+		<folder>images</folder>
+		<folder>tpls</folder>
+	</files>
+	
+	<languages folder="language">
+		<language tag="en-GB">en-GB/en-GB.tpl_ja_techzone.ini</language>
+		<language tag="en-GB">en-GB/en-GB.tpl_ja_techzone.sys.ini</language>
+	</languages>
+
+	<positions>
+		<position>languageswitcherload</position>
+		<position>head-search</position>
+		<position>head-cart</position>
+		<position>mainnav</position>
+		<position>navhelper</position>
+		<position>breadcrumbs</position>
+		<position>head-menu</position>
+		<position>masthead</position>
+		<position>mega-1</position>
+		<position>slideshow</position>
+		<position>tabs</position>
+		<position>off-canvas</position>
+		<position>sidebar-1</position>
+		<position>sidebar-2</position>
+		<position>mast-col</position>
+		<position>footer</position>
+		<position>home-0</position>
+		<position>home-1</position>
+		<position>home-2</position>
+		<position>home-3</position>
+		<position>home-4</position>
+		<position>home-5</position>
+		<position>position-0</position>
+		<position>position-1</position>
+		<position>position-2</position>
+		<position>position-3</position>
+		<position>position-4</position>
+		<position>position-5</position>
+		<position>position-6</position>
+		<position>position-7</position>
+		<position>position-8</position>
+		<position>position-9</position>
+		<position>position-10</position>
+		<position>position-11</position>
+		<position>position-12</position>
+		<position>position-13</position>
+		<position>position-14</position>
+		<position>position-15</position>
+		<position>footer-0</position>
+		<position>footer-1</position>
+		<position>footer-2</position>
+		<position>footer-3</position>
+		<position>footer-4</position>
+		<position>footer-5</position>
+		<position>footer-6</position>
+		<position>footer-7</position>
+		<position>footer-8</position>
+		<position>footer-9</position>
+		<position>footer-10</position>
+		<position>debug</position>
+	</positions>
+
+	<config>
+		<fields name="params" addfieldpath="/plugins/system/t3/includes/depend">
+
+			<fieldset name="navigation_params" label="T3_NAVIGATION_LABEL" description="T3_NAVIGATION_DESC">
+			<field name="navigation_group_default" type="t3depend" function="@group">
+				<option for="navigation_type" value="megamenu">
+					navigation_animation,navigation_animation_duration
+				</option>
+				<option for="navigation_trigger" value="hover">
+					navigation_animation,navigation_animation_duration
+				</option>
+				<option for="navigation_animation" value="fading,slide,zoom,elastic">
+					navigation_animation_duration
+				</option>
+			</field>
+
+			<field name="mm_type" type="menu" default="mainmenu"
+						 label="T3_NAVIGATION_MM_TYPE_LABEL"
+						 description="T3_NAVIGATION_MM_TYPE_DESC"/>
+
+			<field name="navigation_trigger" type="list" default="hover"
+						 global="1"
+						 label="T3_NAVIGATION_TRIGGER_LABEL"
+						 description="T3_NAVIGATION_TRIGGER_DESC">
+				<option value="hover">T3_NAVIGATION_TRIG_HOVER</option>
+				<option value="click">T3_NAVIGATION_TRIG_CLICK</option>
+			</field>
+
+			<field name="navigation_mm_legend" type="t3depend" function="@legend" label="T3_NAVIGATION_MM_GROUP_LABEL"
+						 description="T3_NAVIGATION_MM_GROUP_DESC"/>
+
+			<field name="navigation_type" type="radio" class="t3onoff" default="megamenu"
+						 global="1"
+						 label="T3_NAVIGATION_MM_ENABLE_LABEL"
+						 description="T3_NAVIGATION_MM_ENABLE_DESC">
+				<option value="t3bootstrap" class="off">JNO</option>
+				<option value="megamenu" class="on">JYES</option>
+			</field>
+
+			<field name="navigation_animation" type="list" default=""
+						 global="1"
+						 label="T3_NAVIGATION_ANIMATION_LABEL"
+						 description="T3_NAVIGATION_ANIMATION_DESC">
+				<option value="">None</option>
+				<option value="fading">Fading</option>
+				<option value="slide">Slide</option>
+				<option value="zoom">Zoom</option>
+				<option value="elastic">Elastic</option>
+			</field>
+
+			<field name="navigation_animation_duration" type="text" default="400"
+						 global="1"
+						 label="T3_NAVIGATION_ANIMATION_DURATION_LABEL"
+						 description="T3_NAVIGATION_ANIMATION_DURATION_DESC"/>
+
+			<field name="mm_config" type="hidden" hide="true" global="1"
+						 label=""
+						 description=""/>
+
+			<field name="navigation_collapse_legend" type="t3depend" function="@legend" label="T3_NAVIGATION_COLLAPSE_GROUP_LABEL"
+						 description="T3_NAVIGATION_COLLAPSE_GROUP_DESC"/>
+
+			<field name="navigation_collapse_enable" type="radio" default="1"
+						 global="1"
+						 label="T3_NAVIGATION_COLLAPSE_ENABLE_LABEL"
+						 description="T3_NAVIGATION_COLLAPSE_ENABLE_DESC">
+				<option value="0" class="off">JNO</option>
+				<option value="1" class="on">JYES</option>
+			</field>
+
+			<field name="navigation_vertical" type="t3depend" function="@legend" label="T3_NAVIGATION_VERTICAL_GROUP_LABEL"
+						 description="T3_NAVIGATION_VERTICAL_GROUP_DESC"/>
+
+			<field name="navigation_vertical_enable" type="radio" default="1"
+						 global="1"
+						 label="T3_NAVIGATION_VERTICAL_ENABLE_LABEL"
+						 description="T3_NAVIGATION_VERTICAL_ENABLE_DESC">
+				<option value="0" class="off">JNO</option>
+				<option value="1" class="on">JYES</option>
+			</field>
+
+		</fieldset>
+			
+		</fields>
+	</config>
+
+	<updateservers>
+		<server type="collection">http://update.joomlart.com/service/tracking/list.xml</server>
+	</updateservers>
+
+</extension>

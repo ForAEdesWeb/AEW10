@@ -1,0 +1,163 @@
+/*
+$JA#COPYRIGHT$
+*/
+
+// RTL STYLES
+// ------------------------------------------------------
+
+// Article Images
+// --------------
+article img[align=left],
+.img_caption.left,
+.pull-left.item-image {
+  @media (max-width: @screen-sm) {
+    margin: 0 @grid-gutter-width @t3-global-margin 0;
+  }
+}
+
+article img[align=right],
+.img_caption.right,
+.pull-right.item-image {
+  @media (max-width: @screen-sm) {
+    margin: 0 0 @t3-global-margin @grid-gutter-width;
+  }
+}
+
+.languageswitcherload {
+  ul {
+    float: left;
+  }
+}
+
+// RTL COMPONENT KUNENA
+// ---------------------------------
+#Kunena td.kprofileboxcnt,
+#Kunena td.kcol-kcatlastpost,
+#Kunena div.ktopic-title-cover {
+	text-align: right;
+}
+
+#Kunena div.kthead-title a {
+	float: none;
+}
+
+#Kunena div.kblock span.ktoggler,
+#Kunena .fltrt {
+	float: left;
+}
+
+#Kunena .klatest-avatar,
+#Kunena .ktopic-latest-post-avatar,
+#Kunena div.kcc-subcat,
+#Kunena span.ktopic-category,
+#Kunena span.ktopic-posted-time,
+#Kunena span.ktopic-by {
+	float: right;
+}
+
+#Kunena .path-element-first {
+	background-position: right center;
+	padding: 1px 22px 1px 3px;
+}
+
+#Kunena .kforum-pathway .path-element,
+#Kunena .kforum-pathway-bottom .path-element {
+	background-position: right center;
+	padding-left: 3px;
+	padding-right: 12px;
+}
+
+#Kunena label.searchlabel {
+	margin-right: 0;
+	margin-left: 100px;
+}
+
+#Kunena input#keywords,
+#Kunena input#username {
+	margin-right: 0;
+	margin-left: 10px;
+}
+
+// RTL COMPONENT K2
+// ---------------------------------
+div.latestItemsUser img,
+.com_k2 .itemAuthorBlock .itemAuthorAvatar,
+div.userBlock img,
+div.k2TagCloudBlock a {
+	float: right;
+}
+
+.com_k2 div.itemIsFeatured .catItemTitle span,
+.com_k2 div.catItemIsFeatured .catItemTitle span,
+.com_k2 div.userItemIsFeatured .catItemTitle span,
+.com_k2 div.itemIsFeatured .userItemTitle span,
+.com_k2 div.catItemIsFeatured .userItemTitle span,
+.com_k2 div.userItemIsFeatured .userItemTitle span,
+.com_k2 div.itemIsFeatured .itemTitle span,
+.com_k2 div.catItemIsFeatured .itemTitle span,
+.com_k2 div.userItemIsFeatured .itemTitle span {
+	transform: rotate(-45deg);
+	-webkit-transform: rotate(-45deg);
+}
+
+
+// VirtueMart RTL
+// ----------------------------
+.com_virtuemart {
+	#mod_virtuemart_search,
+	select, select.form-control,
+	select.inputbox, select.input,
+	div.orderby-displaynumber .orderlistcontainer div.activeOrder {
+		background-position: 10px center;
+	}
+
+	.vm2-normalstock,
+	.vm2-nostock,
+	.vm2-lowstock {
+		width: 65px;
+	}
+
+	span.vm-price-desc {
+		float: right;
+		margin-top: 4px;
+	}
+
+	.vm2-termsofservice-icon {
+		background-position: 0 -1309px;
+		margin: 0 0 0 10px;
+	}
+
+	span.quantity-controls input.quantity-plus {
+		background-position: 0 0;
+	}
+
+	// View Cart
+	&.view-cart {
+		.cart-view {
+			.cart-summary tr td {
+				text-align: right;
+			}
+		}
+	}
+}
+
+#fancybox-wrap {
+	#fancybox-close {
+		right: auto;
+	}
+
+	#fancybox-outer .showcart {
+		float: left;
+	}
+}
+
+// K2 badge
+.com_k2 {
+	div.itemIsFeatured, 
+	div.catItemIsFeatured, 
+	div.userItemIsFeatured {
+		&:before {
+			background-image: url(../../images/rtl-featured-badge.png);
+		}
+	}
+}

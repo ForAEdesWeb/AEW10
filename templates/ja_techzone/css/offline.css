@@ -1,0 +1,213 @@
+/*
+ * ------------------------------------------------------------------------
+ * JA Techzone Template
+ * ------------------------------------------------------------------------
+ * Copyright (C) 2004-2011 J.O.O.M Solutions Co., Ltd. All Rights Reserved.
+ * @license - Copyrighted Commercial Software
+ * Author: J.O.O.M Solutions Co., Ltd
+ * Websites:  http://www.joomlart.com -  http://www.joomlancers.com
+ * This file may not be redistributed in whole or significant part.
+ * ------------------------------------------------------------------------
+*/
+
+/* Import Font 
+---------------------- */
+@import url("../fonts/bebasneue-thin-book/stylesheet.css");
+
+
+ /* MAIN OFFLINE STYLE
+ ------------------------*/
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background: url("../images/bg-offline.jpg") no-repeat center top #000;
+	background-size: cover;
+	color: #212121;
+	font-family: Roboto, sans-serif;
+	font-size: 15px;
+  font-weight: 300;
+	line-height: 1.6;
+	margin: 0;
+	padding: 0;
+}
+
+#frame {
+	background: none repeat scroll 0 0 #fff;
+  box-shadow: 5px 5px 0px 0px rgba(0,0,0,0.1);
+  left: 50%;
+  padding: 40px;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  width: 460px;
+}
+
+#frame #offline-img {
+	margin: 0;
+  text-align: center;
+}
+
+.offline-des {
+	margin: 20px 0 30px 0;
+	line-height: 1.5;
+	text-align: center;
+}
+
+/* Title Offline
+----------------------------- */
+#offline-title {
+	color: #fff;
+	text-align: center;
+}
+
+#offline-title h1 {
+	color: #212121;
+  display: inline-block;
+  font-size: 36px;
+  font-weight: 600;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+/* Form Offline
+----------------------------- */
+.form-offline {
+	margin: 0 -10px;
+}
+
+.form-group {
+	margin-bottom: 20px;
+	padding: 0 10px;
+}
+
+.control-label {
+	color: #212121;
+	display: block;
+  font-weight: 400;
+	margin-bottom: 5px;
+}
+
+.control-input {
+  background: transparent;
+	border: 1px solid #d9d9d9;
+	box-shadow: none;
+	color: #999;
+	font-size: 14px;
+	font-family: arial, sans-serif;
+	height: 40px;
+  line-height: 40px;
+	padding: 0 10px;
+  width: 100%;
+	transition: all 0.4s;
+}
+
+.control-input:focus {
+	border-color: #6ab344;
+}
+
+/* Remember Login
+------------------------- */
+#form-login-remember {
+	float: left;
+	padding-top: 4px;
+}
+
+#remember {
+	position: relative;
+	top: 1px;
+}
+
+/* Button
+------------------------- */
+#submit-buton {
+	text-align: right;
+}
+
+#submit-buton .button {
+	background: #6ab344;
+	border-radius: 2px;
+	border: 0;
+	color: #fff;
+  height: 40px;
+  line-height: 40px;
+	font-weight: 500;
+  letter-spacing: 0.5px;
+  padding: 0 20px;
+	text-transform: uppercase;
+}
+
+#submit-buton .button:hover {
+	background: #61aa3b;
+	cursor: pointer;
+}
+
+/* Message system
+----------------------------- */
+#system-message-container {
+	text-align: center;
+	margin-top: 40px;
+}
+
+#system-message {
+	border: 1px solid #f52c06;
+	background: #fff;
+	margin: auto;
+	padding: 20px;
+	width: 585px;
+}
+
+#system-message p {
+	margin: 0;
+}
+
+#system-message .close {
+	display: none;
+}
+
+#system-message dt,
+#system-message .alert-heading {
+	color: #f52c06;
+	border-bottom: 1px solid #f52c06;
+	display: inline-block;
+	font-size: 20px;
+	font-family: bebas_neuebook;
+	font-weight: 700;
+	margin-bottom: 10px;
+	margin-top: 0;
+}
+
+.message {
+	margin-left: 0;
+}
+
+.message ul {
+	list-style: none;
+	padding-left: 0;
+}
+
+/* Responsive
+------------------------------*/
+/* Control screen width 600px */
+@media screen and (max-width: 600px ) {
+	#frame {
+		margin-left: 20px;
+		margin-right: 20px;
+		padding: 20px;
+		width: auto;
+	}
+
+	#system-message {
+		padding: 10px;
+		width: auto;
+	}
+}
+
+/*Control screen mobile */
+@media screen and (max-width: 480px ) {
+	.form-group {
+		width: 100%;
+	}
+}

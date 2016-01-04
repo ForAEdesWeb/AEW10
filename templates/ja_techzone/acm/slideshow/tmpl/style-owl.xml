@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+  <title>Slideshow Style 1</title>
+  <sampledata><![CDATA[ 
+	{":type":"uber:slideshow"}
+   ]]>
+ </sampledata>
+  <fields name="slideshow">
+		
+		<fieldset name="basic2" label="SLIDESHOW_BASIC_2_LABEL" description="SLIDESHOW_BASIC_2_DESC" multiple="1">
+
+				<field name="title" type="text" 
+					description="SLIDESHOW_TITLE_DES"
+					label="SLIDESHOW_TITLE"
+					default=""
+					/>
+					
+				<field name="description" type="textarea" 
+					description="SLIDESHOW_DESCRIPTIONS_DES"
+					label="SLIDESHOW_DESCRIPTIONS_TITLE"
+					default=""
+					/>
+
+				<field name="content-position" type="list" 
+					description="SLIDESHOW_CONTENT_POSITION_DES"
+					label="SLIDESHOW_CONTENT_POSITION_TITLE"
+					default="">
+					<option value="top-left">Top Left</option>
+					<option value="top-right">Top Right</option>
+					<option value="bottom-left">Bottom Left</option>
+					<option value="bottom-right">Bottom Right</option>
+					<option value="center">Center</option>
+					<option value="middle-left">Middle Left</option>
+					<option value="middle-right">Middle Right</option>
+				</field>
+
+				<field name="image" type="media" 
+					description="SLIDESHOW_IMG_DES"
+					label="SLIDESHOW_IMG_TITLE"
+					default=""
+					/>
+
+				<field name="button" type="text" 
+					description="SLIDESHOW_BTN_DES"
+					label="SLIDESHOW_BTN_TITLE"
+					default=""
+					/>
+
+				<field name="button-link" type="text" 
+					description="SLIDESHOW_BTN_LINK_DES"
+					label="SLIDESHOW_BTN_LINK_TITLE"
+					default=""
+					/>
+
+		</fieldset>
+  </fields>
+</form>

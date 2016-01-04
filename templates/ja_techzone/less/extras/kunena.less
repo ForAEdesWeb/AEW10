@@ -1,0 +1,1252 @@
+/*
+$JA#COPYRIGHT$
+*/
+
+// VARIABLES & MIXINS
+// ------------------
+@import "vars.less"; // Modify this for custom colors, font-sizes, etc
+
+
+// OVERRIDE STYLE FOR KUNENA COMPONENT
+// -----------------------------------
+#Kunena {
+  font-size: 15px;
+  font-weight: 300;
+  padding: 0;
+
+  form {
+    margin: 0;
+
+    input[type="text"],
+    textarea {
+      border-color: #d9d9d9;
+    }
+  }
+
+  select {
+    border-color: @border-color;
+    border-radius: @border-radius-small;
+    display: inline-block;
+    padding-top: @t3-global-padding / 3;
+    padding-bottom: @t3-global-padding / 3;
+    width: auto;
+    .box-shadow(none);
+  }
+
+  .button,
+  .kbutton {
+    background-color: @gray;
+    border: 0;
+    border-radius: @border-radius-small;
+    color: @white;
+    display: inline-block;
+    font-size: @font-size-base + 2;
+    height: 36px;
+    line-height: 36px;
+    margin: 0;
+    padding: 0 (@t3-global-padding / 1.5);
+
+    &:hover {
+      background-color: @brand-primary;
+    }
+  }
+
+  .kicon-button {
+    background: transparent !important;
+    margin-right: 10px;
+    span {
+      background: lighten(@gray, 10%);
+      border-radius: @border-radius-small;
+      color: @white;
+
+      span {
+        height: auto;
+        font-size: @font-size-base;
+        padding: 10px 12px;
+
+        &:hover {
+          text-decoration: none;
+        }
+      }
+    }
+
+    &:hover {
+      text-decoration: none;
+
+      span {
+        background: @link-hover-color;
+        text-decoration: none;
+        span:hover {
+          text-decoration: none;
+        }
+      }
+    }
+  }
+
+  .ktoggler {
+    &.close {
+      border-color: @brand-primary;
+      background-color: @brand-primary;
+
+      &:hover,&:focus,&:active {
+        border-color: @brand-primary;
+        background-color: @brand-primary;
+      }
+    }
+
+    &.open {
+      border-color: darken(@brand-primary, 5%);
+      background-color: darken(@brand-primary, 5%);
+
+      &:hover,&:focus,&:active {
+        border-color: @brand-primary;
+        background-color: @brand-primary;
+      }
+    }
+  }
+
+  tr.ksth {
+    background-color: @gray-lighter;
+    color: @gray-dark;
+
+    th {
+      border-bottom: 1px solid darken(@gray-lighter, 5%);
+      padding: 5px;
+    }
+  }
+
+  div.clrline {
+    border-top-color: @border-color;
+  }
+
+  // MAIN NAVIGATION
+  // ---------------
+  #ktop {
+    border-bottom: 3px solid @brand-primary;
+
+    #ktab {
+      margin: 0;
+    }
+
+    ul {
+      display: block;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+
+      li {
+        border: 0;
+        display: block;
+        float: left;
+        margin: 0 !important;
+        padding: 0 0 4px;
+        width: 50%;
+        .box-sizing(border-box);
+
+        &:nth-child(2n+1) {
+          padding-right: 4px;
+        }
+
+        &:nth-child(2n) {
+          padding-left: 4px;
+        }
+
+        // Small devices (tablets, 768px and up) */
+        @media (min-width: @screen-sm-min) {
+          width: auto;
+          padding: 0 4px 0 0 !important;
+
+          &:nth-child(2n+1) {
+            padding-right: 0;
+          }
+
+          &:nth-child(2n) {
+            padding-left: 0;
+          }
+        }
+
+        /* Medium devices (desktops, 992px and up) */
+        @media (min-width: @screen-md-min) {
+          padding: 0 4px 0 0;
+          
+          &:nth-child(2n+1) {
+            padding-right: 0;
+          }
+        }
+
+        a {
+          background-color: @gray-lighter;
+          border-radius: @border-radius-small;
+          color: @gray;
+          display: block;
+          font-size: @font-size-base;
+          float: none;
+          padding: (@t3-global-padding / 2) (@t3-global-padding / 1.5);
+          span {
+            font-weight: @font-weight-bold;
+            line-height: 1;
+          }
+
+          // Small devices (tablets, 768px and up) */
+          @media (min-width: @screen-sm-min) {
+            border-radius: @border-radius-small @border-radius-small 0 0;
+            padding: 10px 10px;
+          }
+
+          &:hover, &:focus, &:active {
+            color: @link-hover-color;
+          }
+        }
+
+        &.active {
+          a {
+            background-color: @brand-primary;
+            span {
+              color: @white;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  // LOGIN BOX
+  // -----------
+  #kprofilebox {
+    padding: @t3-global-padding 0;
+
+    /* Medium devices (desktops, 992px and up) */
+    @media (min-width: @screen-md-min) {
+      border: 1px solid lighten(@gray-light, 25%);
+      border-top: 0;
+      padding: (@t3-global-padding / 2) (@t3-global-padding / 1.5);
+    }
+    
+    .kprofileboxcnt {
+      background-color: @white;
+      border-top: 0;
+      padding: 0;
+    }
+
+    .kbody {
+      margin-right: 0;
+      width: 100%;
+    }
+
+    .input span {
+      input[type="text"], input[type="password"] {
+        border: 1px solid @border-color;
+        border-radius: @border-radius-small;
+        height: 34px;
+        line-height: 34px;
+        margin: 0;
+        padding: 0 10px;
+        width: 100%;
+        .box-sizing(border-box);
+        .box-shadow(none);
+
+        &:focus, &:active {
+          border-color: @gray-light;
+        }
+      }
+
+      &:last-child {
+        display: block;
+        margin: @t3-global-margin / 2 0;
+        width: 100%;
+
+        input[type="submit"] {
+          float: right;
+          vertical-align: middle;
+        }
+
+        // Small devices (tablets, 768px and up) */
+        @media (min-width: @screen-sm-min) {
+          margin-bottom: 0;
+          width: auto;
+        }
+      }
+
+      // Small devices (tablets, 768px and up) */
+      @media (min-width: @screen-sm-min) {
+        display: block;
+        float: left;
+        margin-right: @t3-global-margin;
+        min-width: 200px;
+
+        &:last-child {
+          margin-top: 22px;
+        }
+      }
+
+      input[type="checkbox"] {
+        margin-top: 0;
+        vertical-align: middle;
+      }
+
+      .kbutton {
+        background-color: @brand-primary;
+        border-radius: @border-radius-small;
+        color: @white;
+        font-size: @font-size-base + 2;
+        height: 34px;
+        line-height: 34px;
+        margin-left: (@t3-global-margin / 2);
+        padding: 0 (@t3-global-padding / 1.5);
+
+        &:hover {
+          background-color: @brand-primary;
+        }
+      }
+    }
+
+    // Small devices (tablets, 768px and up) */
+    @media (min-width: @screen-sm-min) {
+      div.input {
+        overflow: hidden;
+      }
+    }
+
+    .klink-block {
+      overflow: hidden;
+      margin-top: 10px;
+
+      span {
+        margin-right: (@t3-global-margin / 2);
+
+        a {
+          color: @text-color;
+
+          &:hover, &:focus, &:active {
+            color: @link-hover-color;
+          }
+        }
+      }
+    }
+
+    // Logined
+    // -------
+    .kprofilebox-left {
+      background-color: transparent;
+      border: 0;
+      padding: 0 (@t3-global-padding / 2) 0 0;
+      vertical-align: top;
+    }
+
+    .kprofileboxcnt {
+      .kprofilebox-link {
+        margin: 0;
+        padding: 0;
+      }
+
+      .kprofilebox-welcome {
+        margin: 0;
+        padding: 0;
+      } 
+    }
+  }
+
+
+  //PATHWAY
+  //--------
+  .kpathway {
+    &.kblock {
+      margin-bottom: 0;
+      // Small devices (tablets, 768px and up) */
+      @media (min-width: @screen-sm-min) {
+        border: 1px solid lighten(@gray-light, 25%);
+      }
+    }
+
+    .kforum-pathway {
+      border: 0;
+      padding: (@t3-global-padding / 2);
+      overflow: hidden;
+    }
+  }
+
+  //KLIST ACTIONS
+  //-------------
+  .klist-markallcatsread {
+    padding: (@t3-global-padding / 2) 0;
+    .clearfix();
+
+    // Small devices (tablets, 768px and up) */
+    @media (min-width: @screen-sm-min) {
+      border: 1px solid @border-color;
+      margin-bottom: @t3-global-margin;
+      padding: (@t3-global-padding / 2) (@t3-global-padding / 1.5);
+    }
+
+    select {
+      margin-right: (@t3-global-margin / 4);
+    }
+  }
+
+  //KBLOCK
+  //------
+  div.kblock {
+    margin: 0 0 @t3-global-margin;
+
+    div.kheader {
+      background-color: @brand-primary;
+      border-bottom: 2px solid darken(@brand-primary, 5%);
+      padding: (@t3-global-padding / 1.5) @t3-global-padding;
+      .clearfix();
+
+      h1, h2, h3 {
+        color: @white;
+        font-size: @font-size-base + 2;
+        font-weight: @font-weight-500;
+        line-height: 1.4;
+        margin: 0;
+        text-transform: uppercase;
+      }
+
+      div.ktitle-desc {
+        color: lighten(@brand-primary, 80%);
+        margin: 0;
+        padding: 0;
+      }
+
+      span.kheadbtn a {
+        background-color: transparent;
+        border: 2px solid rgba(255,255,255, 0.3);
+        font-size: @font-size-base;
+        font-weight: @font-weight-normal;
+        padding: 3px 5px;
+
+        &:hover, &:focus, &:active {
+          border-color: @white;
+        }
+      }
+    }
+
+    .kcontainer {
+      width: 100%;
+    }
+
+    .kblocktable {
+      td {
+        border: 1px solid lighten(@gray-light, 25%);
+        border-top: 0;
+        padding: (@t3-global-padding / 1.5);
+
+        &.kcol-category-icon {
+          text-align: center;
+          width: 5%;
+        }
+
+        &.kcol-kcattitle {
+          width: 35%;
+        }
+
+        &.kcol-kcattopics,
+        &.kcol-kcatreplies {
+          width: 5%;
+        }
+
+        &.krowmoderation,
+        &.ktopicmoderation {
+          border-right: 2px solid lighten(@gray-light, 25%);
+        }
+
+        &.krowmoderation {
+          text-align: left;
+
+          .kchecktask {
+            margin-bottom: (@t3-global-margin / 2);
+          }
+        }
+      }
+    }
+
+    //User avatar
+    .klatest-avatar,
+    .ktopic-latest-post-avatar {
+      border: 0;
+      margin: 5px 10px 0 0;
+      padding: 0;
+
+      img {
+        border: 2px solid @gray-lighter;
+        border-radius: @border-radius-small;
+      }
+    }
+
+    .klatest-subject-by {
+      br {
+        display: none;
+      }
+
+      span {
+        margin-left: 10px;
+      }
+    }
+  }
+
+  // STATISTICS
+  // ----------
+  .kfrontstats {
+    ul {
+      float: none;
+      text-align: left;
+
+      &#kstatslistright {
+        margin-bottom: (@t3-global-margin / 2);
+      }
+
+      // Small devices (tablets, 768px and up) */
+      @media (min-width: @screen-sm-min) {
+        &.fltrt {
+          float: right;
+        }
+
+        &.fltlft {
+          float: left;
+        }
+      }
+    }
+  }
+
+
+  // RECENT TOPICS
+  // -------------
+  .klist-actions {
+    padding: (@t3-global-padding / 4) (@t3-global-padding / 2);
+    .clearfix();
+  }
+
+  div.ktopic-title-cover {
+    line-height: 1.4;
+    margin-bottom: (@t3-global-margin / 4);
+
+    .ktopic-title {
+      font-size: @font-size-large;
+      font-weight: @font-weight-500;
+    }
+  }
+
+  .ktopic-posted-time {
+    margin-right: 10px;
+  }
+
+  // HELP PAGE
+  // ---------
+  .khelprulescontent {
+    padding: @t3-global-padding 0 0;
+
+    // Small devices (tablets, 768px and up) */
+    @media (min-width: @screen-sm-min) {
+      padding: @t3-global-padding;
+    }
+  }
+
+  // SEARCH PAGE
+  // -----------
+  #kforumsearch {
+    display: block;
+
+    // Small devices (tablets, 768px and up) */
+    @media (min-width: @screen-sm-min) {
+      display: table;
+    }
+
+    tbody {
+      display: block;
+      // Small devices (tablets, 768px and up) */
+      @media (min-width: @screen-sm-min) {
+        display: table-row-group;
+      }
+    }
+
+    tr {
+      display: block;
+      // Small devices (tablets, 768px and up) */
+      @media (min-width: @screen-sm-min) {
+        display: table-row;
+      }
+    }
+
+    th,td {
+      display: block;
+      // Small devices (tablets, 768px and up) */
+      @media (min-width: @screen-sm-min) {
+        display: table-cell;
+        padding: @t3-global-padding;
+      }
+    }
+
+    legend {
+      border: 0;
+      display: inline-block;
+      width: auto;
+    }
+
+    input {
+      margin-bottom: 10px;
+    }
+
+    input[type="checkbox"] {
+      margin: 0;
+      vertical-align: middle;
+    }
+
+    fieldset#search-posts-start select {
+      margin-left: 0;
+    }
+
+    select {
+      // Small devices (tablets, 768px and up) */
+      @media (min-width: @screen-sm-min) {
+        margin-bottom: 10px;
+      }
+    }
+
+    #keywords {
+      // Small devices (tablets, 768px and up) */
+      @media (min-width: @screen-sm-min) {
+        float: left;
+        width: 220px;
+      }
+
+      // Small devices (tablets, 768px and up) */
+      @media (min-width: 1280px) {
+        margin-bottom: 0;
+      }
+    }
+
+    #search-posts-start {
+      input {
+        // Small devices (tablets, 768px and up) */
+        @media (min-width: @screen-sm-max) {
+          float: left;
+          margin-bottom: 0;
+          margin-right: @t3-global-margin / 2;
+        }
+      }
+    }
+  }
+
+  div.kadvsearch {
+    margin-top: @t3-global-margin;
+
+    .kbody {
+      border: 1px solid @border-color;
+    }
+  }
+
+  // Search results
+  // --------------
+  div.ksearchresult-desc {
+    color: @white;
+    padding: 0;
+  }
+
+  div#ksearchresult {
+
+    .kbody {
+      border: 1px solid @border-color;
+    }
+
+    span.kmsgdate {
+      color: @gray-dark;
+      display: block;
+      font-size: @font-size-small;
+      float: none;
+      text-align: left;
+      width: 100%;
+    }
+
+    td.kprofile-left {
+      background-color: transparent;
+      border: 0;
+      min-width: 80px;
+      width: 80px;
+
+      // Small devices (tablets, 768px and up) */
+      @media (min-width: @screen-sm-min) {
+        width: 170px;
+        min-width: 170px;
+      }
+
+      ul {
+        background-color: @gray-lighter;
+        display: block;
+        margin-right: @t3-global-margin / 2;
+        padding: @t3-global-padding / 3;
+
+      // Small devices (tablets, 768px and up) */
+      @media (min-width: @screen-sm-min) {
+        background-color: transparent;
+      }
+
+        .kpost-username {
+          font-size: @font-size-base;
+          font-weight: @font-weight-500;
+          text-transform: uppercase;
+        }
+      }
+
+      img {
+        border: 0;
+        padding: 0;
+        max-width: 48px !important;
+
+        // Small devices (tablets, 768px and up) */
+        @media (min-width: @screen-sm-min) {
+          max-width: none !important;
+        }
+      }
+    }
+
+    td.resultmsg {
+      border-top: 0;
+      padding-left: 0;
+      padding-right: 0;
+
+      // Small devices (tablets, 768px and up) */
+      @media (min-width: @screen-sm-min) {
+        padding: @t3-global-padding;
+      }
+    }
+  }
+  
+  // NEW TOPIC
+  // ---------
+  #kpostmessage {
+    display: block;
+    // Small devices (tablets, 768px and up) */
+    @media (min-width: @screen-sm-min) {
+      border: 1px solid @border-color;
+      display: table;
+    }
+
+    tbody {
+      display: block;
+      // Small devices (tablets, 768px and up) */
+      @media (min-width: @screen-sm-min) {
+        display: table-row-group;
+      }
+    }
+
+    tr {
+      border-bottom: 1px solid @border-color;
+      display: block;
+      // Small devices (tablets, 768px and up) */
+      @media (min-width: @screen-sm-min) {
+        display: table-row;
+      }
+    }
+
+    th, td {
+      border: 0;
+      display: block;
+      padding: 0 0 (@t3-global-padding / 2) 0;
+      // Small devices (tablets, 768px and up) */
+      @media (min-width: @screen-sm-min) {
+        border: 1px solid @border-color;
+        display: table-cell;
+        padding: (@t3-global-padding / 2);
+      }
+    }
+
+    .kcol-first {
+      padding-top: @t3-global-padding / 2;
+      width: 100%;
+    }
+
+    .kpostbuttons {
+      padding: 5px;
+    }
+
+    td.kposthint {
+      border: 0 !important;
+    }
+
+    #kbbcode-toolbar {
+      height: auto;
+      margin: 0;
+      overflow: hidden;
+    }
+
+    #kpost-message {
+      overflow: hidden;
+
+      textarea {
+        width: 100%;
+        .box-sizing(border-box);
+      }
+    }
+
+    #kpost-buttons {
+      padding: (@t3-global-padding / 2) 0;
+
+      .kbutton {
+        margin: 0 5px;
+      }
+    }
+
+    .kfile-input-textbox {
+      margin-bottom: 10px;
+      // Small devices (tablets, 768px and up) */
+      @media (min-width: @screen-sm-min) {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  // PROFILE PAGE
+  // ------------
+  .k-profile {
+    table#kprofile {
+      display: block;
+      // Small devices (tablets, 768px and up) */
+      @media (min-width: @screen-sm-max) {
+        display: table;
+      }
+
+      tbody {
+        display: block;
+        // Small devices (tablets, 768px and up) */
+        @media (min-width: @screen-sm-max) {
+          display: table-row-group;
+        }
+      }
+
+      tr {
+        display: block;
+        // Small devices (tablets, 768px and up) */
+        @media (min-width: @screen-sm-max) {
+          display: table-row;
+        }
+      }
+
+      th, td {
+        display: block;
+        // Small devices (tablets, 768px and up) */
+        @media (min-width: @screen-sm-max) {
+          display: table-cell;
+        }
+
+        table { display: table; }
+        tbody { display: table-row-group; }
+        tr { display: table-row; }
+        th, td { display: table-cell; }
+      }
+
+      // Profile right column
+      // --------------------
+      .kcol-right {
+        border: 0 !important;
+        padding: @t3-global-padding 0 0;
+        // Small devices (tablets, 768px and up) */
+        @media (min-width: @screen-sm-min) {
+          border: 1px solid @border-color !important;
+          padding: @t3-global-padding;
+        }
+      }
+    }
+
+    // Profile left col
+    // ----------------
+    .kcol-left {
+      padding: 0;
+      overflow: hidden;
+
+      // Small devices (tablets, 768px and up) */
+      @media (min-width: @screen-sm-max) {
+        padding: @t3-global-padding;
+        min-width: 170px;
+        width: 200px;
+      }
+
+      #kprofile-leftcol {
+        padding-left: 100px;
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+        // Small devices (tablets, 768px and up) */
+        @media (min-width: @screen-sm-min) {
+          padding: 0;
+          overflow: visible;
+        }
+
+        div.kavatar-lg {
+          border: 0;
+          display: block;
+          height: auto;
+          padding: 0;
+          position: absolute;
+          left: 0;
+          top: 0;
+          width: 80px;
+
+          // Small devices (tablets, 768px and up) */
+          @media (min-width: @screen-sm-min) {
+            background-color: @gray-lighter;
+            border-bottom: 1px solid #ddd;
+            margin: -(@t3-global-padding / 1.5) -(@t3-global-padding / 1.5) @t3-global-padding;
+            padding: @t3-global-padding / 1.5;
+            position: relative;
+            left: auto;
+            top: auto;
+            width: auto;
+          }
+
+          img {
+            border: 10px solid @gray-lighter;
+            width: 80px;
+            max-width: 80px;
+
+            // Small devices (tablets, 768px and up) */
+            @media (min-width: @screen-sm-min) {
+              border: 0;
+              width: auto;
+              max-width: none;
+            }
+          }
+        }
+
+        div#kprofile-stats {
+          margin-top: 0;
+        }
+      }
+    }
+
+    // Profile tabs
+    #kprofile-tabs,
+    #kprofile-edit {
+      dt {
+        font-weight: 400;
+        margin: 0 5px 5px 0;
+        padding: 6px 10px;
+        // Small devices (tablets, 768px and up) */
+        @media (min-width: @screen-sm-min) {
+          margin: 0 5px 0 0;
+        }
+
+        &.open {
+          background-color: @brand-primary;
+          border: 1px solid @brand-primary;
+          color: @white;
+          // Small devices (tablets, 768px and up) */
+          @media (min-width: @screen-sm-min) {
+            background-color: @white;
+            border: 1px solid #ddd;
+            border-bottom-color: @white;
+            color: @text-color;
+          }
+        }
+      }
+
+      // Profile table
+      .kedituser,
+      .keditprofile,
+      .keditavatar,
+      .keditsettings {
+        table {
+          display: block;
+          tbody, tr, th, td {
+            display: block;
+          }
+
+          .kcol-first {
+            border-bottom: 0;
+            padding-top: 10px;
+            padding-bottom: 0;
+            width: auto;
+          }
+
+          .editlinktip {
+            display: block;
+            overflow: hidden;
+
+            #kbbcode-message {
+              height: 100px;
+            } 
+          }
+
+          #kavatar-upload {
+            width: 230px;
+          }
+
+          // Small devices (tablets, 768px and up) */
+          @media screen and (min-width: @screen-xs-max) {
+            display: table;
+
+            tbody {
+              display: table-row-group;
+            }
+
+            tr {
+              display: table-row;
+            }
+
+            th, td {
+              display: table-cell;
+            }
+
+            .kcol-first {
+              border-bottom: 1px solid #d9d9d9;
+            }
+
+            #kavatar-upload {
+              width: auto;
+            }
+          }
+        }
+      }
+    }
+
+    .keditprofile {
+      input[type="text"] {
+        display: inline-block;
+        width: auto;
+      }
+    }
+  }
+
+
+  // TOPIC DETAIL
+  // ------------
+  #frontstats_tbody {
+    .kbody {
+      border: 1px solid @border-color;
+      border-top: 0;
+      padding: @t3-global-padding;
+    }
+  }
+
+  // KMessage header
+  // ---------------
+  div.kmsg-header {
+    h2 {
+      background-color: @gray-lighter;
+      border-bottom: 1px solid @border-color;
+      margin: 0;
+      overflow: hidden;
+
+      .kmsgtitle {
+        color: @text-color;
+        padding: 5px 12px;
+      }
+
+      .kmsgdate {
+        color: @text-color;
+        padding-left: 12px;
+      }
+
+      .kmsg-id-left {
+        a { color: @text-color;}
+      }
+
+      // Small devices (tablets, 768px and up) */
+      @media (min-width: @screen-sm-min) {
+        border: 1px solid @border-color;
+        padding-top: 8px;
+        padding-bottom: 8px;
+
+        .kmsgtitle {
+          float: left;
+          padding: 0 12px;
+        }
+      }
+
+    }
+  }
+
+  // Detail table
+  .kmsg {
+    display: block;
+    overflow: hidden;
+
+    tbody {
+      display: block;
+
+      tr {
+        display: block;
+
+        th, td {
+          display: block;
+        }
+      }
+    }
+
+    // Small devices (tablets, 768px and up) */
+    @media (min-width: @screen-sm-min) {
+      border: 1px solid @border-color;
+      border-top: 0;
+      display: table;
+
+      tbody {
+        display: table-row-group;
+
+        tr {
+          display: table-row;
+
+          th, td {
+            display: table-cell;
+            padding: @t3-global-padding;
+          }
+        }
+      }
+    }
+
+    .kprofile-left {
+      border: 0;
+      width: 100%;
+      // Small devices (tablets, 768px and up) */
+      @media (min-width: @screen-sm-min) {
+        border-right: 1px solid @border-color;
+        min-width: 220px;
+        width: 220px;
+      }
+
+      ul.kpost-profile {
+        background-color: @gray-lighter;
+        border-top: 1px solid @white;
+        margin: 0;
+        padding: 12px 0 12px 120px;
+        position: relative;
+        text-align: left !important;
+        overflow: hidden;
+        width: 100%;
+        // Small devices (tablets, 768px and up) */
+        @media (min-width: @screen-sm-min) {
+          background-color: transparent;
+          border: 0;
+          padding: 0;
+        }
+
+        li {
+          float: left;
+          padding: 0 0 5px;
+          width: 45%;
+          // Small devices (tablets, 768px and up) */
+          @media (min-width: @screen-sm-min) {
+            float: none;
+            padding: 3px 0;
+            text-align: center;
+            width: 100%;
+
+            .kicon-button span span {
+              padding: 5px 10px;
+            }
+          }
+        }
+
+        .kpost-avatar {
+          position: absolute;
+          left: 12px;
+          top: 12px;
+
+          img {
+            border: 5px solid @white;
+            padding: 0;
+            width: 80px;
+          }
+
+          // Small devices (tablets, 768px and up) */
+          @media (min-width: @screen-sm-min) {
+            position: relative;
+            top: auto;
+            left: auto;
+
+            img {
+              width: auto;
+            }
+          }
+        }
+      }
+    }
+
+    .kmessage-left {
+      border: 0;
+      padding: (@t3-global-padding / 2) 0;
+      
+      // Small devices (tablets, 768px and up) */
+      @media (min-width: @screen-sm-min) {
+        padding: @t3-global-padding;
+      }
+
+      div.kmsgbody {
+        min-height: 1px;
+      }
+    }
+  }
+
+  // Klist actions
+  // -------------
+  .klist-actions {
+    background-color: @gray-lighter;
+    position: relative;
+    min-height: 40px;
+    margin-bottom: @t3-global-margin;
+    padding-right: 12px;
+
+    .klist-actions-forum {
+      padding: 6px 12px;
+      .clearfix();
+
+      .kmessage-buttons-row {
+        float: left;
+        margin-right: 5px;
+      }
+    }
+
+    .kpagination li span.pagenav {
+      background-color: @brand-primary;
+      color: @white;
+    }
+  }
+
+  .klist-actions-goto {
+    position: absolute;
+    right: 12px;
+    top: 20px;
+  }
+
+  .klist-bottom {
+    margin-bottom: @t3-global-margin / 2;
+    position: relative;
+    .clearfix();
+
+    div.kmoderatorslist-jump form#jumpto {
+      margin: 0;
+    }
+  }
+
+
+  // EDIT POST
+  // ---------
+  .khistory table {
+    border: 1px solid @border-color;
+  }
+
+  // PATHWAY
+  // -------
+  .kpathway {
+    background: @gray-lighter;
+    color: @gray;
+
+    &.breadcrumbs-1 {
+      border-top: 0;
+      margin-bottom: @t3-global-margin;
+    }
+
+    &.breadcrumbs-2 {
+      margin-bottom: @t3-global-margin;
+    }
+
+    a {
+      color: @gray-light;
+      text-shadow: 0px 1px 1px @white;
+
+      &:hover, &:focus, &:active {
+        color: @link-hover-color;
+      }
+    }
+  }
+}

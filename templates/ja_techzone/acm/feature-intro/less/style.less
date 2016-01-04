@@ -1,0 +1,160 @@
+/**
+ * $JA#COPYRIGHT$
+ */
+ 
+// VARIABLES & MIXINS
+// ------------------
+@import "../../../less/vars.less"; // Modify this for custom colors, font-sizes, etc
+
+.acm-feature-intro {
+  position: relative;
+
+  .mask {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 3;
+  }
+
+  .feature-intro-img {
+    max-width: 100%;
+  }
+
+  .feature-intro-content {
+    color: @white;
+    padding: @grid-gutter-width*2 @grid-gutter-width*3;
+    position: absolute;
+    z-index: 2;
+
+    @media screen and (max-width: @screen-sm-max) {
+      padding-left: @grid-gutter-width/2;
+      padding-right: @grid-gutter-width/2;
+    }
+
+    &.top-left {
+      top: 0;
+      left: 0;
+    }
+    
+    &.top-right {
+      top: 0;
+      right: 0;
+      text-align: right;
+    }
+    
+    &.bottom-left {
+      bottom: 0;
+      left: 0;
+    }
+
+    &.bottom-right {
+      bottom: 0;
+      right: 0;
+      text-align: right;
+    }
+
+    &.center {
+      text-align: center;
+      top: 0;
+      right: 0;
+      left: 0;
+
+      .item-desc {
+        width: 30%;
+
+        // Tablet/mobile view
+        @media (max-width: @screen-sm-max) {
+          width: 80%;
+        }
+      }
+
+      @media screen and (min-width: @screen-sm) {
+        top: 40px;
+      }
+
+      @media screen and (min-width: @screen-md) {
+        top: 10%;
+      }
+
+      @media screen and (min-width: @screen-lg) {
+        top: 30%;
+      }
+    }
+
+    &.middle-left {
+      left: 0;
+      padding-top: 0;
+      padding-bottom: 0;
+
+      @media screen and (min-width: @screen-sm) {
+        top: 40px;
+      }
+
+      @media screen and (min-width: @screen-md) {
+        top: 10%;
+      }
+
+      @media screen and (min-width: @screen-lg) {
+        top: 30%;
+      }
+    }
+
+    &.middle-right {
+      right: 0;
+      text-align: right;
+      padding-top: 0;
+      padding-bottom: 0;
+
+      @media screen and (min-width: @screen-sm) {
+        top: 40px;
+      }
+
+      @media screen and (min-width: @screen-md) {
+        top: 10%;
+      }
+
+      @media screen and (min-width: @screen-lg) {
+        top: 30%;
+      }
+    }
+
+    &.style-light {
+      .item-title {
+        color: @black;
+      }
+
+      .item-desc {
+        color: @black;
+      }
+    }
+
+    .item-desc {
+      color: @white;
+      display: inline-block;
+      font-weight: @font-weight-normal;
+      font-size: @font-size-base;
+      margin: 0;
+      text-transform: uppercase;
+      width: 60%;
+      .opacity(0.6);
+    }
+
+    .item-title {
+      color: @white;
+      font-family: @headings-font-family;
+      font-weight: @font-weight-normal;
+      font-size: 24px;
+      margin-top: 0;
+      margin-bottom: (@t3-global-margin / 4);
+      position: relative;
+
+      @media screen and (max-width: @screen-xs-max) {
+        font-size: @font-size-base;
+        margin-bottom: (@t3-global-margin / 2);
+      }
+    }
+
+  }
+}

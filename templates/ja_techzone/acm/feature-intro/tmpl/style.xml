@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+  <title>Slideshow Style 1</title>
+  <sampledata><![CDATA[ 
+	{":type":"uber:feature-intro"}
+   ]]>
+ </sampledata>
+  <fields name="feature-intro">
+		
+		<fieldset name="basic" label="FEATURE_INTRO_LABEL" description="FEATURE_INTRO_DESC" multiple="0">
+
+				<field name="title" type="text" 
+					description="FEATURE_INTRO_TITLE_DES"
+					label="FEATURE_INTRO_TITLE"
+					default=""
+					/>
+					
+				<field name="description" type="textarea" 
+					description="FEATURE_INTRO_DESCRIPTIONS_DES"
+					label="FEATURE_INTRO_DESCRIPTIONS_TITLE"
+					default=""
+					/>
+
+				<field name="content-position" type="list" 
+					description="FEATURE_INTRO_CONTENT_POSITION_DES"
+					label="FEATURE_INTRO_CONTENT_POSITION_TITLE"
+					default="">
+					<option value="top-left">Top Left</option>
+					<option value="top-right">Top Right</option>
+					<option value="bottom-left">Bottom Left</option>
+					<option value="bottom-right">Bottom Right</option>
+					<option value="center">Center</option>
+					<option value="middle-left">Middle Left</option>
+					<option value="middle-right">Middle Right</option>
+				</field>
+
+				<field name="acm-style" type="list" default="style-dark"
+	          label="ACM_STYLE_LABEL"
+	          description="ACM_STYLE_DESC">
+	        <option value="style-dark">Style Dark</option>
+	        <option value="style-light">Style Light</option>
+	      </field>
+
+				<field name="image" type="media" 
+					description="FEATURE_INTRO_IMG_DES"
+					label="FEATURE_INTRO_IMG_TITLE"
+					default=""
+					/>
+
+				<field name="button" type="text" 
+					description="FEATURE_INTRO_BTN_DES"
+					label="FEATURE_INTRO_BTN_TITLE"
+					default=""
+					/>
+
+				<field name="button-link" type="text" 
+					description="FEATURE_INTRO_BTN_LINK_DES"
+					label="FEATURE_INTRO_BTN_LINK_TITLE"
+					default=""
+					/>
+
+		</fieldset>
+  </fields>
+</form>

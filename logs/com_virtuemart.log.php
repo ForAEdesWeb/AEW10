@@ -1,0 +1,14 @@
+#
+#<?php die("Forbidden."); ?>
+
+2015-07-06 09:51:42 ERROR vmError: Could not find VirtueMart submenues, please install VirtueMart again
+2015-07-06 09:57:37 ERROR vmError: Warning, the Safe Path is empty, for safety reasons it is very important to create a folder in a path not accessible by an URL or unguessable name, create also a folder 'invoices' and 'keys' in it to store your sensitive data secure. Our suggested path is for your system '/var/www/vmfiles/'. <br>You can also use complex folder name as 'password' for example '/var/www/knifeking.dsa.tw/administrator/components/com_virtuemart/mx3e4tJ5GlPr/'. Use this link to the <a href='http://knifeking.dsa.tw/administrator/index.php?option=com_virtuemart&view=config' >config</a>
+2015-07-06 10:02:10 ERROR vmError: Warning, the Safe Path is empty, for safety reasons it is very important to create a folder in a path not accessible by an URL or unguessable name, create also a folder 'invoices' and 'keys' in it to store your sensitive data secure. Our suggested path is for your system '/var/www/vmfiles/'. <br>You can also use complex folder name as 'password' for example '/var/www/knifeking.dsa.tw/administrator/components/com_virtuemart/WrTGZhtwcpe0/'. Use this link to the <a href='http://knifeking.dsa.tw/administrator/index.php?option=com_virtuemart&view=config' >config</a>
+2015-07-06 10:02:17 ERROR vmError: Warning, the Safe Path is empty, for safety reasons it is very important to create a folder in a path not accessible by an URL or unguessable name, create also a folder 'invoices' and 'keys' in it to store your sensitive data secure. Our suggested path is for your system '/var/www/vmfiles/'. <br>You can also use complex folder name as 'password' for example '/var/www/knifeking.dsa.tw/administrator/components/com_virtuemart/Ol8MjaNECWog/'. Use this link to the <a href='http://knifeking.dsa.tw/administrator/index.php?option=com_virtuemart&view=config' >config</a>
+2015-07-06 10:21:40 ERROR vmError: 警告，安全路徑 是空的，為了安全原因，建立 URL 路徑無法存取的資料夾是非常重要的，也建立發票資料夾在此安全存放敏感資料。 您系統的建議路徑是 /var/www/vmfiles/ 
+2015-07-06 10:32:52 ERROR vmError: 警告，安全路徑 是空的，為了安全原因，建立 URL 路徑無法存取的資料夾是非常重要的，也建立發票資料夾在此安全存放敏感資料。 您系統的建議路徑是 /var/www/vmfiles/ 
+2015-07-06 10:33:33 ERROR vmError: 警告，安全路徑 是空的，為了安全原因，建立 URL 路徑無法存取的資料夾是非常重要的，也建立發票資料夾在此安全存放敏感資料。 您系統的建議路徑是 /var/www/vmfiles/ 
+2015-07-07 03:26:50 ERROR vmError: 警告，Safe Path 是空的，為了安全原因，建立 URL 路徑無法存取的資料夾是非常重要的，也建立發票資料夾在此安全存放敏感資料。 您系統的建議路徑是 /var/www/vmfiles/ 
+2015-07-07 04:22:08 ERROR vmError: 警告，安全路徑 是空的，為了安全原因，建立 URL 路徑無法存取的資料夾是非常重要的，也建立發票資料夾在此安全存放敏感資料。 您系統的建議路徑是 /var/www/vmfiles/ 
+2015-07-07 04:25:39 ERROR vmError: 警告，安全路徑 是空的，為了安全原因，建立 URL 路徑無法存取的資料夾是非常重要的，也建立發票資料夾在此安全存放敏感資料。 您系統的建議路徑是 /var/www/vmfiles/ 
+2015-07-07 04:26:27 ERROR vmError: 警告，安全路徑 是空的，為了安全原因，建立 URL 路徑無法存取的資料夾是非常重要的，也建立發票資料夾在此安全存放敏感資料。 您系統的建議路徑是 /var/www/vmfiles/ 

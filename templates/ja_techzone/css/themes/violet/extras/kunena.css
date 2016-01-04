@@ -1,0 +1,1205 @@
+#Kunena {
+  font-size: 15px;
+  font-weight: 300;
+  padding: 0;
+}
+#Kunena form {
+  margin: 0;
+}
+#Kunena form input[type="text"],
+#Kunena form textarea {
+  border-color: #d9d9d9;
+}
+#Kunena select {
+  border-color: #eeeeee;
+  border-radius: 2px;
+  display: inline-block;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  width: auto;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+#Kunena .button,
+#Kunena .kbutton {
+  background-color: #555555;
+  border: 0;
+  border-radius: 2px;
+  color: #ffffff;
+  display: inline-block;
+  font-size: 16px;
+  height: 36px;
+  line-height: 36px;
+  margin: 0;
+  padding: 0 16px;
+}
+#Kunena .button:hover,
+#Kunena .kbutton:hover {
+  background-color: #a963a9;
+}
+#Kunena .kicon-button {
+  background: transparent !important;
+  margin-right: 10px;
+}
+#Kunena .kicon-button span {
+  background: #6f6f6f;
+  border-radius: 2px;
+  color: #ffffff;
+}
+#Kunena .kicon-button span span {
+  height: auto;
+  font-size: 14px;
+  padding: 10px 12px;
+}
+#Kunena .kicon-button span span:hover {
+  text-decoration: none;
+}
+#Kunena .kicon-button:hover {
+  text-decoration: none;
+}
+#Kunena .kicon-button:hover span {
+  background: #a963a9;
+  text-decoration: none;
+}
+#Kunena .kicon-button:hover span span:hover {
+  text-decoration: none;
+}
+#Kunena .ktoggler.close {
+  border-color: #a963a9;
+  background-color: #a963a9;
+}
+#Kunena .ktoggler.close:hover,
+#Kunena .ktoggler.close:focus,
+#Kunena .ktoggler.close:active {
+  border-color: #a963a9;
+  background-color: #a963a9;
+}
+#Kunena .ktoggler.open {
+  border-color: #9c569c;
+  background-color: #9c569c;
+}
+#Kunena .ktoggler.open:hover,
+#Kunena .ktoggler.open:focus,
+#Kunena .ktoggler.open:active {
+  border-color: #a963a9;
+  background-color: #a963a9;
+}
+#Kunena tr.ksth {
+  background-color: #eeeeee;
+  color: #333333;
+}
+#Kunena tr.ksth th {
+  border-bottom: 1px solid #e1e1e1;
+  padding: 5px;
+}
+#Kunena div.clrline {
+  border-top-color: #eeeeee;
+}
+#Kunena #ktop {
+  border-bottom: 3px solid #a963a9;
+}
+#Kunena #ktop #ktab {
+  margin: 0;
+}
+#Kunena #ktop ul {
+  display: block;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+#Kunena #ktop ul li {
+  border: 0;
+  display: block;
+  float: left;
+  margin: 0 !important;
+  padding: 0 0 4px;
+  width: 50%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  
+}
+#Kunena #ktop ul li:nth-child(2n+1) {
+  padding-right: 4px;
+}
+#Kunena #ktop ul li:nth-child(2n) {
+  padding-left: 4px;
+}
+@media (min-width: 768px) {
+  #Kunena #ktop ul li {
+    width: auto;
+    padding: 0 4px 0 0 !important;
+  }
+  #Kunena #ktop ul li:nth-child(2n+1) {
+    padding-right: 0;
+  }
+  #Kunena #ktop ul li:nth-child(2n) {
+    padding-left: 0;
+  }
+}
+@media (min-width: 992px) {
+  #Kunena #ktop ul li {
+    padding: 0 4px 0 0;
+  }
+  #Kunena #ktop ul li:nth-child(2n+1) {
+    padding-right: 0;
+  }
+}
+#Kunena #ktop ul li a {
+  background-color: #eeeeee;
+  border-radius: 2px;
+  color: #555555;
+  display: block;
+  font-size: 14px;
+  float: none;
+  padding: 12px 16px;
+}
+#Kunena #ktop ul li a span {
+  font-weight: 700;
+  line-height: 1;
+}
+@media (min-width: 768px) {
+  #Kunena #ktop ul li a {
+    border-radius: 2px 2px 0 0;
+    padding: 10px 10px;
+  }
+}
+#Kunena #ktop ul li a:hover,
+#Kunena #ktop ul li a:focus,
+#Kunena #ktop ul li a:active {
+  color: #a963a9;
+}
+#Kunena #ktop ul li.active a {
+  background-color: #a963a9;
+}
+#Kunena #ktop ul li.active a span {
+  color: #ffffff;
+}
+#Kunena #kprofilebox {
+  padding: 24px 0;
+  
+}
+@media (min-width: 992px) {
+  #Kunena #kprofilebox {
+    border: 1px solid #d9d9d9;
+    border-top: 0;
+    padding: 12px 16px;
+  }
+}
+#Kunena #kprofilebox .kprofileboxcnt {
+  background-color: #ffffff;
+  border-top: 0;
+  padding: 0;
+}
+#Kunena #kprofilebox .kbody {
+  margin-right: 0;
+  width: 100%;
+}
+#Kunena #kprofilebox .input span input[type="text"],
+#Kunena #kprofilebox .input span input[type="password"] {
+  border: 1px solid #eeeeee;
+  border-radius: 2px;
+  height: 34px;
+  line-height: 34px;
+  margin: 0;
+  padding: 0 10px;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+#Kunena #kprofilebox .input span input[type="text"]:focus,
+#Kunena #kprofilebox .input span input[type="password"]:focus,
+#Kunena #kprofilebox .input span input[type="text"]:active,
+#Kunena #kprofilebox .input span input[type="password"]:active {
+  border-color: #999999;
+}
+#Kunena #kprofilebox .input span:last-child {
+  display: block;
+  margin: 12px 0;
+  width: 100%;
+}
+#Kunena #kprofilebox .input span:last-child input[type="submit"] {
+  float: right;
+  vertical-align: middle;
+}
+@media (min-width: 768px) {
+  #Kunena #kprofilebox .input span:last-child {
+    margin-bottom: 0;
+    width: auto;
+  }
+}
+@media (min-width: 768px) {
+  #Kunena #kprofilebox .input span {
+    display: block;
+    float: left;
+    margin-right: 24px;
+    min-width: 200px;
+  }
+  #Kunena #kprofilebox .input span:last-child {
+    margin-top: 22px;
+  }
+}
+#Kunena #kprofilebox .input span input[type="checkbox"] {
+  margin-top: 0;
+  vertical-align: middle;
+}
+#Kunena #kprofilebox .input span .kbutton {
+  background-color: #a963a9;
+  border-radius: 2px;
+  color: #ffffff;
+  font-size: 16px;
+  height: 34px;
+  line-height: 34px;
+  margin-left: 12px;
+  padding: 0 16px;
+}
+#Kunena #kprofilebox .input span .kbutton:hover {
+  background-color: #a963a9;
+}
+@media (min-width: 768px) {
+  #Kunena #kprofilebox div.input {
+    overflow: hidden;
+  }
+}
+#Kunena #kprofilebox .klink-block {
+  overflow: hidden;
+  margin-top: 10px;
+}
+#Kunena #kprofilebox .klink-block span {
+  margin-right: 12px;
+}
+#Kunena #kprofilebox .klink-block span a {
+  color: #757575;
+}
+#Kunena #kprofilebox .klink-block span a:hover,
+#Kunena #kprofilebox .klink-block span a:focus,
+#Kunena #kprofilebox .klink-block span a:active {
+  color: #a963a9;
+}
+#Kunena #kprofilebox .kprofilebox-left {
+  background-color: transparent;
+  border: 0;
+  padding: 0 12px 0 0;
+  vertical-align: top;
+}
+#Kunena #kprofilebox .kprofileboxcnt .kprofilebox-link {
+  margin: 0;
+  padding: 0;
+}
+#Kunena #kprofilebox .kprofileboxcnt .kprofilebox-welcome {
+  margin: 0;
+  padding: 0;
+}
+#Kunena .kpathway.kblock {
+  margin-bottom: 0;
+}
+@media (min-width: 768px) {
+  #Kunena .kpathway.kblock {
+    border: 1px solid #d9d9d9;
+  }
+}
+#Kunena .kpathway .kforum-pathway {
+  border: 0;
+  padding: 12px;
+  overflow: hidden;
+}
+#Kunena .klist-markallcatsread {
+  padding: 12px 0;
+}
+#Kunena .klist-markallcatsread:before,
+#Kunena .klist-markallcatsread:after {
+  content: " ";
+  display: table;
+}
+#Kunena .klist-markallcatsread:after {
+  clear: both;
+}
+@media (min-width: 768px) {
+  #Kunena .klist-markallcatsread {
+    border: 1px solid #eeeeee;
+    margin-bottom: 24px;
+    padding: 12px 16px;
+  }
+}
+#Kunena .klist-markallcatsread select {
+  margin-right: 6px;
+}
+#Kunena div.kblock {
+  margin: 0 0 24px;
+}
+#Kunena div.kblock div.kheader {
+  background-color: #a963a9;
+  border-bottom: 2px solid #9c569c;
+  padding: 16px 24px;
+}
+#Kunena div.kblock div.kheader:before,
+#Kunena div.kblock div.kheader:after {
+  content: " ";
+  display: table;
+}
+#Kunena div.kblock div.kheader:after {
+  clear: both;
+}
+#Kunena div.kblock div.kheader h1,
+#Kunena div.kblock div.kheader h2,
+#Kunena div.kblock div.kheader h3 {
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.4;
+  margin: 0;
+  text-transform: uppercase;
+}
+#Kunena div.kblock div.kheader div.ktitle-desc {
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
+}
+#Kunena div.kblock div.kheader span.kheadbtn a {
+  background-color: transparent;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  font-size: 14px;
+  font-weight: 400;
+  padding: 3px 5px;
+}
+#Kunena div.kblock div.kheader span.kheadbtn a:hover,
+#Kunena div.kblock div.kheader span.kheadbtn a:focus,
+#Kunena div.kblock div.kheader span.kheadbtn a:active {
+  border-color: #ffffff;
+}
+#Kunena div.kblock .kcontainer {
+  width: 100%;
+}
+#Kunena div.kblock .kblocktable td {
+  border: 1px solid #d9d9d9;
+  border-top: 0;
+  padding: 16px;
+}
+#Kunena div.kblock .kblocktable td.kcol-category-icon {
+  text-align: center;
+  width: 5%;
+}
+#Kunena div.kblock .kblocktable td.kcol-kcattitle {
+  width: 35%;
+}
+#Kunena div.kblock .kblocktable td.kcol-kcattopics,
+#Kunena div.kblock .kblocktable td.kcol-kcatreplies {
+  width: 5%;
+}
+#Kunena div.kblock .kblocktable td.krowmoderation,
+#Kunena div.kblock .kblocktable td.ktopicmoderation {
+  border-right: 2px solid #d9d9d9;
+}
+#Kunena div.kblock .kblocktable td.krowmoderation {
+  text-align: left;
+}
+#Kunena div.kblock .kblocktable td.krowmoderation .kchecktask {
+  margin-bottom: 12px;
+}
+#Kunena div.kblock .klatest-avatar,
+#Kunena div.kblock .ktopic-latest-post-avatar {
+  border: 0;
+  margin: 5px 10px 0 0;
+  padding: 0;
+}
+#Kunena div.kblock .klatest-avatar img,
+#Kunena div.kblock .ktopic-latest-post-avatar img {
+  border: 2px solid #eeeeee;
+  border-radius: 2px;
+}
+#Kunena div.kblock .klatest-subject-by br {
+  display: none;
+}
+#Kunena div.kblock .klatest-subject-by span {
+  margin-left: 10px;
+}
+#Kunena .kfrontstats ul {
+  float: none;
+  text-align: left;
+}
+#Kunena .kfrontstats ul#kstatslistright {
+  margin-bottom: 12px;
+}
+@media (min-width: 768px) {
+  #Kunena .kfrontstats ul.fltrt {
+    float: right;
+  }
+  #Kunena .kfrontstats ul.fltlft {
+    float: left;
+  }
+}
+#Kunena .klist-actions {
+  padding: 6px 12px;
+}
+#Kunena .klist-actions:before,
+#Kunena .klist-actions:after {
+  content: " ";
+  display: table;
+}
+#Kunena .klist-actions:after {
+  clear: both;
+}
+#Kunena div.ktopic-title-cover {
+  line-height: 1.4;
+  margin-bottom: 6px;
+}
+#Kunena div.ktopic-title-cover .ktopic-title {
+  font-size: 21px;
+  font-weight: 500;
+}
+#Kunena .ktopic-posted-time {
+  margin-right: 10px;
+}
+#Kunena .khelprulescontent {
+  padding: 24px 0 0;
+}
+@media (min-width: 768px) {
+  #Kunena .khelprulescontent {
+    padding: 24px;
+  }
+}
+#Kunena #kforumsearch {
+  display: block;
+}
+@media (min-width: 768px) {
+  #Kunena #kforumsearch {
+    display: table;
+  }
+}
+#Kunena #kforumsearch tbody {
+  display: block;
+}
+@media (min-width: 768px) {
+  #Kunena #kforumsearch tbody {
+    display: table-row-group;
+  }
+}
+#Kunena #kforumsearch tr {
+  display: block;
+}
+@media (min-width: 768px) {
+  #Kunena #kforumsearch tr {
+    display: table-row;
+  }
+}
+#Kunena #kforumsearch th,
+#Kunena #kforumsearch td {
+  display: block;
+}
+@media (min-width: 768px) {
+  #Kunena #kforumsearch th,
+  #Kunena #kforumsearch td {
+    display: table-cell;
+    padding: 24px;
+  }
+}
+#Kunena #kforumsearch legend {
+  border: 0;
+  display: inline-block;
+  width: auto;
+}
+#Kunena #kforumsearch input {
+  margin-bottom: 10px;
+}
+#Kunena #kforumsearch input[type="checkbox"] {
+  margin: 0;
+  vertical-align: middle;
+}
+#Kunena #kforumsearch fieldset#search-posts-start select {
+  margin-left: 0;
+}
+@media (min-width: 768px) {
+  #Kunena #kforumsearch select {
+    margin-bottom: 10px;
+  }
+}
+@media (min-width: 768px) {
+  #Kunena #kforumsearch #keywords {
+    float: left;
+    width: 220px;
+  }
+}
+@media (min-width: 1280px) {
+  #Kunena #kforumsearch #keywords {
+    margin-bottom: 0;
+  }
+}
+@media (min-width: 991px) {
+  #Kunena #kforumsearch #search-posts-start input {
+    float: left;
+    margin-bottom: 0;
+    margin-right: 12px;
+  }
+}
+#Kunena div.kadvsearch {
+  margin-top: 24px;
+}
+#Kunena div.kadvsearch .kbody {
+  border: 1px solid #eeeeee;
+}
+#Kunena div.ksearchresult-desc {
+  color: #ffffff;
+  padding: 0;
+}
+#Kunena div#ksearchresult .kbody {
+  border: 1px solid #eeeeee;
+}
+#Kunena div#ksearchresult span.kmsgdate {
+  color: #333333;
+  display: block;
+  font-size: 12px;
+  float: none;
+  text-align: left;
+  width: 100%;
+}
+#Kunena div#ksearchresult td.kprofile-left {
+  background-color: transparent;
+  border: 0;
+  min-width: 80px;
+  width: 80px;
+}
+@media (min-width: 768px) {
+  #Kunena div#ksearchresult td.kprofile-left {
+    width: 170px;
+    min-width: 170px;
+  }
+}
+#Kunena div#ksearchresult td.kprofile-left ul {
+  background-color: #eeeeee;
+  display: block;
+  margin-right: 12px;
+  padding: 8px;
+}
+@media (min-width: 768px) {
+  #Kunena div#ksearchresult td.kprofile-left ul {
+    background-color: transparent;
+  }
+}
+#Kunena div#ksearchresult td.kprofile-left ul .kpost-username {
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+#Kunena div#ksearchresult td.kprofile-left img {
+  border: 0;
+  padding: 0;
+  max-width: 48px !important;
+}
+@media (min-width: 768px) {
+  #Kunena div#ksearchresult td.kprofile-left img {
+    max-width: none !important;
+  }
+}
+#Kunena div#ksearchresult td.resultmsg {
+  border-top: 0;
+  padding-left: 0;
+  padding-right: 0;
+}
+@media (min-width: 768px) {
+  #Kunena div#ksearchresult td.resultmsg {
+    padding: 24px;
+  }
+}
+#Kunena #kpostmessage {
+  display: block;
+}
+@media (min-width: 768px) {
+  #Kunena #kpostmessage {
+    border: 1px solid #eeeeee;
+    display: table;
+  }
+}
+#Kunena #kpostmessage tbody {
+  display: block;
+}
+@media (min-width: 768px) {
+  #Kunena #kpostmessage tbody {
+    display: table-row-group;
+  }
+}
+#Kunena #kpostmessage tr {
+  border-bottom: 1px solid #eeeeee;
+  display: block;
+}
+@media (min-width: 768px) {
+  #Kunena #kpostmessage tr {
+    display: table-row;
+  }
+}
+#Kunena #kpostmessage th,
+#Kunena #kpostmessage td {
+  border: 0;
+  display: block;
+  padding: 0 0 12px 0;
+}
+@media (min-width: 768px) {
+  #Kunena #kpostmessage th,
+  #Kunena #kpostmessage td {
+    border: 1px solid #eeeeee;
+    display: table-cell;
+    padding: 12px;
+  }
+}
+#Kunena #kpostmessage .kcol-first {
+  padding-top: 12px;
+  width: 100%;
+}
+#Kunena #kpostmessage .kpostbuttons {
+  padding: 5px;
+}
+#Kunena #kpostmessage td.kposthint {
+  border: 0 !important;
+}
+#Kunena #kpostmessage #kbbcode-toolbar {
+  height: auto;
+  margin: 0;
+  overflow: hidden;
+}
+#Kunena #kpostmessage #kpost-message {
+  overflow: hidden;
+}
+#Kunena #kpostmessage #kpost-message textarea {
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+#Kunena #kpostmessage #kpost-buttons {
+  padding: 12px 0;
+}
+#Kunena #kpostmessage #kpost-buttons .kbutton {
+  margin: 0 5px;
+}
+#Kunena #kpostmessage .kfile-input-textbox {
+  margin-bottom: 10px;
+}
+@media (min-width: 768px) {
+  #Kunena #kpostmessage .kfile-input-textbox {
+    margin-bottom: 0;
+  }
+}
+#Kunena .k-profile table#kprofile {
+  display: block;
+}
+@media (min-width: 991px) {
+  #Kunena .k-profile table#kprofile {
+    display: table;
+  }
+}
+#Kunena .k-profile table#kprofile tbody {
+  display: block;
+}
+@media (min-width: 991px) {
+  #Kunena .k-profile table#kprofile tbody {
+    display: table-row-group;
+  }
+}
+#Kunena .k-profile table#kprofile tr {
+  display: block;
+}
+@media (min-width: 991px) {
+  #Kunena .k-profile table#kprofile tr {
+    display: table-row;
+  }
+}
+#Kunena .k-profile table#kprofile th,
+#Kunena .k-profile table#kprofile td {
+  display: block;
+}
+@media (min-width: 991px) {
+  #Kunena .k-profile table#kprofile th,
+  #Kunena .k-profile table#kprofile td {
+    display: table-cell;
+  }
+}
+#Kunena .k-profile table#kprofile th table,
+#Kunena .k-profile table#kprofile td table {
+  display: table;
+}
+#Kunena .k-profile table#kprofile th tbody,
+#Kunena .k-profile table#kprofile td tbody {
+  display: table-row-group;
+}
+#Kunena .k-profile table#kprofile th tr,
+#Kunena .k-profile table#kprofile td tr {
+  display: table-row;
+}
+#Kunena .k-profile table#kprofile th th,
+#Kunena .k-profile table#kprofile td th,
+#Kunena .k-profile table#kprofile th td,
+#Kunena .k-profile table#kprofile td td {
+  display: table-cell;
+}
+#Kunena .k-profile table#kprofile .kcol-right {
+  border: 0 !important;
+  padding: 24px 0 0;
+}
+@media (min-width: 768px) {
+  #Kunena .k-profile table#kprofile .kcol-right {
+    border: 1px solid #eeeeee !important;
+    padding: 24px;
+  }
+}
+#Kunena .k-profile .kcol-left {
+  padding: 0;
+  overflow: hidden;
+}
+@media (min-width: 991px) {
+  #Kunena .k-profile .kcol-left {
+    padding: 24px;
+    min-width: 170px;
+    width: 200px;
+  }
+}
+#Kunena .k-profile .kcol-left #kprofile-leftcol {
+  padding-left: 100px;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+@media (min-width: 768px) {
+  #Kunena .k-profile .kcol-left #kprofile-leftcol {
+    padding: 0;
+    overflow: visible;
+  }
+}
+#Kunena .k-profile .kcol-left #kprofile-leftcol div.kavatar-lg {
+  border: 0;
+  display: block;
+  height: auto;
+  padding: 0;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 80px;
+}
+@media (min-width: 768px) {
+  #Kunena .k-profile .kcol-left #kprofile-leftcol div.kavatar-lg {
+    background-color: #eeeeee;
+    border-bottom: 1px solid #ddd;
+    margin: -16px -16px 24px;
+    padding: 16px;
+    position: relative;
+    left: auto;
+    top: auto;
+    width: auto;
+  }
+}
+#Kunena .k-profile .kcol-left #kprofile-leftcol div.kavatar-lg img {
+  border: 10px solid #eeeeee;
+  width: 80px;
+  max-width: 80px;
+}
+@media (min-width: 768px) {
+  #Kunena .k-profile .kcol-left #kprofile-leftcol div.kavatar-lg img {
+    border: 0;
+    width: auto;
+    max-width: none;
+  }
+}
+#Kunena .k-profile .kcol-left #kprofile-leftcol div#kprofile-stats {
+  margin-top: 0;
+}
+#Kunena .k-profile #kprofile-tabs dt,
+#Kunena .k-profile #kprofile-edit dt {
+  font-weight: 400;
+  margin: 0 5px 5px 0;
+  padding: 6px 10px;
+}
+@media (min-width: 768px) {
+  #Kunena .k-profile #kprofile-tabs dt,
+  #Kunena .k-profile #kprofile-edit dt {
+    margin: 0 5px 0 0;
+  }
+}
+#Kunena .k-profile #kprofile-tabs dt.open,
+#Kunena .k-profile #kprofile-edit dt.open {
+  background-color: #a963a9;
+  border: 1px solid #a963a9;
+  color: #ffffff;
+}
+@media (min-width: 768px) {
+  #Kunena .k-profile #kprofile-tabs dt.open,
+  #Kunena .k-profile #kprofile-edit dt.open {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-bottom-color: #ffffff;
+    color: #757575;
+  }
+}
+#Kunena .k-profile #kprofile-tabs .kedituser table,
+#Kunena .k-profile #kprofile-edit .kedituser table,
+#Kunena .k-profile #kprofile-tabs .keditprofile table,
+#Kunena .k-profile #kprofile-edit .keditprofile table,
+#Kunena .k-profile #kprofile-tabs .keditavatar table,
+#Kunena .k-profile #kprofile-edit .keditavatar table,
+#Kunena .k-profile #kprofile-tabs .keditsettings table,
+#Kunena .k-profile #kprofile-edit .keditsettings table {
+  display: block;
+}
+#Kunena .k-profile #kprofile-tabs .kedituser table tbody,
+#Kunena .k-profile #kprofile-edit .kedituser table tbody,
+#Kunena .k-profile #kprofile-tabs .keditprofile table tbody,
+#Kunena .k-profile #kprofile-edit .keditprofile table tbody,
+#Kunena .k-profile #kprofile-tabs .keditavatar table tbody,
+#Kunena .k-profile #kprofile-edit .keditavatar table tbody,
+#Kunena .k-profile #kprofile-tabs .keditsettings table tbody,
+#Kunena .k-profile #kprofile-edit .keditsettings table tbody,
+#Kunena .k-profile #kprofile-tabs .kedituser table tr,
+#Kunena .k-profile #kprofile-edit .kedituser table tr,
+#Kunena .k-profile #kprofile-tabs .keditprofile table tr,
+#Kunena .k-profile #kprofile-edit .keditprofile table tr,
+#Kunena .k-profile #kprofile-tabs .keditavatar table tr,
+#Kunena .k-profile #kprofile-edit .keditavatar table tr,
+#Kunena .k-profile #kprofile-tabs .keditsettings table tr,
+#Kunena .k-profile #kprofile-edit .keditsettings table tr,
+#Kunena .k-profile #kprofile-tabs .kedituser table th,
+#Kunena .k-profile #kprofile-edit .kedituser table th,
+#Kunena .k-profile #kprofile-tabs .keditprofile table th,
+#Kunena .k-profile #kprofile-edit .keditprofile table th,
+#Kunena .k-profile #kprofile-tabs .keditavatar table th,
+#Kunena .k-profile #kprofile-edit .keditavatar table th,
+#Kunena .k-profile #kprofile-tabs .keditsettings table th,
+#Kunena .k-profile #kprofile-edit .keditsettings table th,
+#Kunena .k-profile #kprofile-tabs .kedituser table td,
+#Kunena .k-profile #kprofile-edit .kedituser table td,
+#Kunena .k-profile #kprofile-tabs .keditprofile table td,
+#Kunena .k-profile #kprofile-edit .keditprofile table td,
+#Kunena .k-profile #kprofile-tabs .keditavatar table td,
+#Kunena .k-profile #kprofile-edit .keditavatar table td,
+#Kunena .k-profile #kprofile-tabs .keditsettings table td,
+#Kunena .k-profile #kprofile-edit .keditsettings table td {
+  display: block;
+}
+#Kunena .k-profile #kprofile-tabs .kedituser table .kcol-first,
+#Kunena .k-profile #kprofile-edit .kedituser table .kcol-first,
+#Kunena .k-profile #kprofile-tabs .keditprofile table .kcol-first,
+#Kunena .k-profile #kprofile-edit .keditprofile table .kcol-first,
+#Kunena .k-profile #kprofile-tabs .keditavatar table .kcol-first,
+#Kunena .k-profile #kprofile-edit .keditavatar table .kcol-first,
+#Kunena .k-profile #kprofile-tabs .keditsettings table .kcol-first,
+#Kunena .k-profile #kprofile-edit .keditsettings table .kcol-first {
+  border-bottom: 0;
+  padding-top: 10px;
+  padding-bottom: 0;
+  width: auto;
+}
+#Kunena .k-profile #kprofile-tabs .kedituser table .editlinktip,
+#Kunena .k-profile #kprofile-edit .kedituser table .editlinktip,
+#Kunena .k-profile #kprofile-tabs .keditprofile table .editlinktip,
+#Kunena .k-profile #kprofile-edit .keditprofile table .editlinktip,
+#Kunena .k-profile #kprofile-tabs .keditavatar table .editlinktip,
+#Kunena .k-profile #kprofile-edit .keditavatar table .editlinktip,
+#Kunena .k-profile #kprofile-tabs .keditsettings table .editlinktip,
+#Kunena .k-profile #kprofile-edit .keditsettings table .editlinktip {
+  display: block;
+  overflow: hidden;
+}
+#Kunena .k-profile #kprofile-tabs .kedituser table .editlinktip #kbbcode-message,
+#Kunena .k-profile #kprofile-edit .kedituser table .editlinktip #kbbcode-message,
+#Kunena .k-profile #kprofile-tabs .keditprofile table .editlinktip #kbbcode-message,
+#Kunena .k-profile #kprofile-edit .keditprofile table .editlinktip #kbbcode-message,
+#Kunena .k-profile #kprofile-tabs .keditavatar table .editlinktip #kbbcode-message,
+#Kunena .k-profile #kprofile-edit .keditavatar table .editlinktip #kbbcode-message,
+#Kunena .k-profile #kprofile-tabs .keditsettings table .editlinktip #kbbcode-message,
+#Kunena .k-profile #kprofile-edit .keditsettings table .editlinktip #kbbcode-message {
+  height: 100px;
+}
+#Kunena .k-profile #kprofile-tabs .kedituser table #kavatar-upload,
+#Kunena .k-profile #kprofile-edit .kedituser table #kavatar-upload,
+#Kunena .k-profile #kprofile-tabs .keditprofile table #kavatar-upload,
+#Kunena .k-profile #kprofile-edit .keditprofile table #kavatar-upload,
+#Kunena .k-profile #kprofile-tabs .keditavatar table #kavatar-upload,
+#Kunena .k-profile #kprofile-edit .keditavatar table #kavatar-upload,
+#Kunena .k-profile #kprofile-tabs .keditsettings table #kavatar-upload,
+#Kunena .k-profile #kprofile-edit .keditsettings table #kavatar-upload {
+  width: 230px;
+}
+@media screen and (min-width: 767px) {
+  #Kunena .k-profile #kprofile-tabs .kedituser table,
+  #Kunena .k-profile #kprofile-edit .kedituser table,
+  #Kunena .k-profile #kprofile-tabs .keditprofile table,
+  #Kunena .k-profile #kprofile-edit .keditprofile table,
+  #Kunena .k-profile #kprofile-tabs .keditavatar table,
+  #Kunena .k-profile #kprofile-edit .keditavatar table,
+  #Kunena .k-profile #kprofile-tabs .keditsettings table,
+  #Kunena .k-profile #kprofile-edit .keditsettings table {
+    display: table;
+  }
+  #Kunena .k-profile #kprofile-tabs .kedituser table tbody,
+  #Kunena .k-profile #kprofile-edit .kedituser table tbody,
+  #Kunena .k-profile #kprofile-tabs .keditprofile table tbody,
+  #Kunena .k-profile #kprofile-edit .keditprofile table tbody,
+  #Kunena .k-profile #kprofile-tabs .keditavatar table tbody,
+  #Kunena .k-profile #kprofile-edit .keditavatar table tbody,
+  #Kunena .k-profile #kprofile-tabs .keditsettings table tbody,
+  #Kunena .k-profile #kprofile-edit .keditsettings table tbody {
+    display: table-row-group;
+  }
+  #Kunena .k-profile #kprofile-tabs .kedituser table tr,
+  #Kunena .k-profile #kprofile-edit .kedituser table tr,
+  #Kunena .k-profile #kprofile-tabs .keditprofile table tr,
+  #Kunena .k-profile #kprofile-edit .keditprofile table tr,
+  #Kunena .k-profile #kprofile-tabs .keditavatar table tr,
+  #Kunena .k-profile #kprofile-edit .keditavatar table tr,
+  #Kunena .k-profile #kprofile-tabs .keditsettings table tr,
+  #Kunena .k-profile #kprofile-edit .keditsettings table tr {
+    display: table-row;
+  }
+  #Kunena .k-profile #kprofile-tabs .kedituser table th,
+  #Kunena .k-profile #kprofile-edit .kedituser table th,
+  #Kunena .k-profile #kprofile-tabs .keditprofile table th,
+  #Kunena .k-profile #kprofile-edit .keditprofile table th,
+  #Kunena .k-profile #kprofile-tabs .keditavatar table th,
+  #Kunena .k-profile #kprofile-edit .keditavatar table th,
+  #Kunena .k-profile #kprofile-tabs .keditsettings table th,
+  #Kunena .k-profile #kprofile-edit .keditsettings table th,
+  #Kunena .k-profile #kprofile-tabs .kedituser table td,
+  #Kunena .k-profile #kprofile-edit .kedituser table td,
+  #Kunena .k-profile #kprofile-tabs .keditprofile table td,
+  #Kunena .k-profile #kprofile-edit .keditprofile table td,
+  #Kunena .k-profile #kprofile-tabs .keditavatar table td,
+  #Kunena .k-profile #kprofile-edit .keditavatar table td,
+  #Kunena .k-profile #kprofile-tabs .keditsettings table td,
+  #Kunena .k-profile #kprofile-edit .keditsettings table td {
+    display: table-cell;
+  }
+  #Kunena .k-profile #kprofile-tabs .kedituser table .kcol-first,
+  #Kunena .k-profile #kprofile-edit .kedituser table .kcol-first,
+  #Kunena .k-profile #kprofile-tabs .keditprofile table .kcol-first,
+  #Kunena .k-profile #kprofile-edit .keditprofile table .kcol-first,
+  #Kunena .k-profile #kprofile-tabs .keditavatar table .kcol-first,
+  #Kunena .k-profile #kprofile-edit .keditavatar table .kcol-first,
+  #Kunena .k-profile #kprofile-tabs .keditsettings table .kcol-first,
+  #Kunena .k-profile #kprofile-edit .keditsettings table .kcol-first {
+    border-bottom: 1px solid #d9d9d9;
+  }
+  #Kunena .k-profile #kprofile-tabs .kedituser table #kavatar-upload,
+  #Kunena .k-profile #kprofile-edit .kedituser table #kavatar-upload,
+  #Kunena .k-profile #kprofile-tabs .keditprofile table #kavatar-upload,
+  #Kunena .k-profile #kprofile-edit .keditprofile table #kavatar-upload,
+  #Kunena .k-profile #kprofile-tabs .keditavatar table #kavatar-upload,
+  #Kunena .k-profile #kprofile-edit .keditavatar table #kavatar-upload,
+  #Kunena .k-profile #kprofile-tabs .keditsettings table #kavatar-upload,
+  #Kunena .k-profile #kprofile-edit .keditsettings table #kavatar-upload {
+    width: auto;
+  }
+}
+#Kunena .k-profile .keditprofile input[type="text"] {
+  display: inline-block;
+  width: auto;
+}
+#Kunena #frontstats_tbody .kbody {
+  border: 1px solid #eeeeee;
+  border-top: 0;
+  padding: 24px;
+}
+#Kunena div.kmsg-header h2 {
+  background-color: #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  margin: 0;
+  overflow: hidden;
+}
+#Kunena div.kmsg-header h2 .kmsgtitle {
+  color: #757575;
+  padding: 5px 12px;
+}
+#Kunena div.kmsg-header h2 .kmsgdate {
+  color: #757575;
+  padding-left: 12px;
+}
+#Kunena div.kmsg-header h2 .kmsg-id-left a {
+  color: #757575;
+}
+@media (min-width: 768px) {
+  #Kunena div.kmsg-header h2 {
+    border: 1px solid #eeeeee;
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
+  #Kunena div.kmsg-header h2 .kmsgtitle {
+    float: left;
+    padding: 0 12px;
+  }
+}
+#Kunena .kmsg {
+  display: block;
+  overflow: hidden;
+}
+#Kunena .kmsg tbody {
+  display: block;
+}
+#Kunena .kmsg tbody tr {
+  display: block;
+}
+#Kunena .kmsg tbody tr th,
+#Kunena .kmsg tbody tr td {
+  display: block;
+}
+@media (min-width: 768px) {
+  #Kunena .kmsg {
+    border: 1px solid #eeeeee;
+    border-top: 0;
+    display: table;
+  }
+  #Kunena .kmsg tbody {
+    display: table-row-group;
+  }
+  #Kunena .kmsg tbody tr {
+    display: table-row;
+  }
+  #Kunena .kmsg tbody tr th,
+  #Kunena .kmsg tbody tr td {
+    display: table-cell;
+    padding: 24px;
+  }
+}
+#Kunena .kmsg .kprofile-left {
+  border: 0;
+  width: 100%;
+}
+@media (min-width: 768px) {
+  #Kunena .kmsg .kprofile-left {
+    border-right: 1px solid #eeeeee;
+    min-width: 220px;
+    width: 220px;
+  }
+}
+#Kunena .kmsg .kprofile-left ul.kpost-profile {
+  background-color: #eeeeee;
+  border-top: 1px solid #ffffff;
+  margin: 0;
+  padding: 12px 0 12px 120px;
+  position: relative;
+  text-align: left !important;
+  overflow: hidden;
+  width: 100%;
+}
+@media (min-width: 768px) {
+  #Kunena .kmsg .kprofile-left ul.kpost-profile {
+    background-color: transparent;
+    border: 0;
+    padding: 0;
+  }
+}
+#Kunena .kmsg .kprofile-left ul.kpost-profile li {
+  float: left;
+  padding: 0 0 5px;
+  width: 45%;
+}
+@media (min-width: 768px) {
+  #Kunena .kmsg .kprofile-left ul.kpost-profile li {
+    float: none;
+    padding: 3px 0;
+    text-align: center;
+    width: 100%;
+  }
+  #Kunena .kmsg .kprofile-left ul.kpost-profile li .kicon-button span span {
+    padding: 5px 10px;
+  }
+}
+#Kunena .kmsg .kprofile-left ul.kpost-profile .kpost-avatar {
+  position: absolute;
+  left: 12px;
+  top: 12px;
+}
+#Kunena .kmsg .kprofile-left ul.kpost-profile .kpost-avatar img {
+  border: 5px solid #ffffff;
+  padding: 0;
+  width: 80px;
+}
+@media (min-width: 768px) {
+  #Kunena .kmsg .kprofile-left ul.kpost-profile .kpost-avatar {
+    position: relative;
+    top: auto;
+    left: auto;
+  }
+  #Kunena .kmsg .kprofile-left ul.kpost-profile .kpost-avatar img {
+    width: auto;
+  }
+}
+#Kunena .kmsg .kmessage-left {
+  border: 0;
+  padding: 12px 0;
+}
+@media (min-width: 768px) {
+  #Kunena .kmsg .kmessage-left {
+    padding: 24px;
+  }
+}
+#Kunena .kmsg .kmessage-left div.kmsgbody {
+  min-height: 1px;
+}
+#Kunena .klist-actions {
+  background-color: #eeeeee;
+  position: relative;
+  min-height: 40px;
+  margin-bottom: 24px;
+  padding-right: 12px;
+}
+#Kunena .klist-actions .klist-actions-forum {
+  padding: 6px 12px;
+}
+#Kunena .klist-actions .klist-actions-forum:before,
+#Kunena .klist-actions .klist-actions-forum:after {
+  content: " ";
+  display: table;
+}
+#Kunena .klist-actions .klist-actions-forum:after {
+  clear: both;
+}
+#Kunena .klist-actions .klist-actions-forum .kmessage-buttons-row {
+  float: left;
+  margin-right: 5px;
+}
+#Kunena .klist-actions .kpagination li span.pagenav {
+  background-color: #a963a9;
+  color: #ffffff;
+}
+#Kunena .klist-actions-goto {
+  position: absolute;
+  right: 12px;
+  top: 20px;
+}
+#Kunena .klist-bottom {
+  margin-bottom: 12px;
+  position: relative;
+}
+#Kunena .klist-bottom:before,
+#Kunena .klist-bottom:after {
+  content: " ";
+  display: table;
+}
+#Kunena .klist-bottom:after {
+  clear: both;
+}
+#Kunena .klist-bottom div.kmoderatorslist-jump form#jumpto {
+  margin: 0;
+}
+#Kunena .khistory table {
+  border: 1px solid #eeeeee;
+}
+#Kunena .kpathway {
+  background: #eeeeee;
+  color: #555555;
+}
+#Kunena .kpathway.breadcrumbs-1 {
+  border-top: 0;
+  margin-bottom: 24px;
+}
+#Kunena .kpathway.breadcrumbs-2 {
+  margin-bottom: 24px;
+}
+#Kunena .kpathway a {
+  color: #999999;
+  text-shadow: 0px 1px 1px #ffffff;
+}
+#Kunena .kpathway a:hover,
+#Kunena .kpathway a:focus,
+#Kunena .kpathway a:active {
+  color: #a963a9;
+}
